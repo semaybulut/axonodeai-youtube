@@ -1,7 +1,7 @@
 # YOUTUBE STATE LAYER
-**Version:** 1.0
+**Version:** 1.1
 **Owner:** Sema | AxonodeAI
-**Last Updated:** 2026-05-08
+**Last Updated:** 2026-05-09
 
 ---
 
@@ -48,8 +48,9 @@ nasıl kullanırsın, onu anlatacağım."
 | Video No | Tip | Konu | Durum | Tarih |
 |----------|-----|------|-------|-------|
 | 001 | Trend Analizi | Python Öğrenmek Yetmiyor | ✅ Yayında | 2026-05-08 |
-| 002 | Tutorial | AI Agent Sistemleri — Veri Biliminde Kullanım | 📋 Planlandı | 2026-05-14 |
-| 003 | — | — | — | — |
+| 002 | Tutorial | AI Agent Sistemleri: Veri Biliminde Nasıl Kullanılır? | 📋 Planlandı | 2026-05-14 |
+| 003 | Kariyer / POV | Sağlıktan Veri Bilimine — Kimse Söylemedi Bunları | 💡 Fikir | 2026-05-21 |
+| 004 | Trend Analizi | %57 Şirket AI Agent Kullanıyor — Sen Ne Yapıyorsun? | 💡 Fikir | 2026-05-28 |
 
 ---
 
@@ -117,10 +118,11 @@ Top kaynak kanallar:
 
 ## STRATEJİK ÖNERİLER (Şu An)
 
-1. **Sonraki video:** AI Agent- Veri Bilimi araçları Tutorial — verilen söz yerine getirilmeli
-2. **Thumbnail:** Mavi kullanıldı, sıradaki video farklı renk olmalı
-3. **Altyazı:** Video 001 İngilizce altyazı eklendi mi kontrol et
-4. **Yorum:** Tüm yorumlara cevap ver — ilk 24 saat kritik
+1. **Sonraki video (VID-002):** AI Agent sistemleri Tutorial — verilen söz, 2026-05-14 hedef
+2. **Thumbnail VID-002:** #f0eee9 + #f94144 metin — mavi değil, açık renk
+3. **Altyazı:** VID-001 İngilizce altyazı eklendi mi kontrol et
+4. **Yorum:** Tüm yorumlara cevap ver — ilk 48 saat kritik
+5. **API Kurulumu:** YouTube Analytics API ve Google Sheets henüz yapılandırılmadı — skills/fetch-analytics.md adımlarını takip et
 
 ---
 
