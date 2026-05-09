@@ -53,11 +53,12 @@ axonodeai-youtube/
 │   └── analytics-snapshot.md          ← Son analytics özeti
 │
 └── [mevcut sistem dosyaları]
-├── youtube-strategy.md
-├── youtube-seo-system.md
-├── youtube-state-layer.md
-├── youtube-production-template.md
-└── youtube-viral-mekanizma.md
+    ├── youtube-strategy.md
+    ├── youtube-seo-system.md
+    ├── youtube-state-layer.md
+    ├── youtube-production-template.md
+    ├── youtube-viral-mekanizma.md      ← MUTLAKA OKU — 12 video analizi, 8.1M izlenme
+    └── podcast-system.md
 
 ---
 
@@ -147,7 +148,16 @@ Bir sonraki: #d2c7ff veya #f4b5de
 - Google Sheets dışında başka servise veri gönderme
 
 ---
+## KRİTİK OKUMA LİSTESİ
 
+/youtube başlamadan önce şu dosyaları oku:
+1. CLAUDE.md (bu dosya)
+2. youtube-state-layer.md
+3. youtube-strategy.md
+4. youtube-viral-mekanizma.md ← ZORUNLU — hook formülleri burada
+5. knowledge/viral-mechanism-library.md
+
+---
 ## AJAN ÇALIŞMA SIRASI
 
 /youtube komutu çalıştırılınca:
