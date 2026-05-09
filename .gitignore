@@ -1,2 +1,4 @@
 .env
 .DS_Store
+client_secret.json
+scripts/get_token.py
