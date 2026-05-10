@@ -24,6 +24,25 @@ knowledge/viral-mechanism-library.md
 
 ---
 
+## ÖNCE MEVCUT DURUMU KONTROL ET
+
+youtube-state-layer.md → YAYIN TAKVİMİ tablosuna bak.
+
+Kaç video "SEO Hazır" veya "Planlandı" durumunda?
+
+Eğer 3'ten az planlanmış video varsa:
+→ Yeni fikir üret, toplamı 5'e tamamla
+
+Eğer 3 veya daha fazla planlanmış video varsa:
+→ Mevcut planlı videoların SEO paketlerini GÜNCELLE
+→ Viral kütüphanedeki yeni pattern'leri uygula
+→ Hook ve başlık alternatiflerini yenile
+→ "Önceki çalışmanın aynısı" deme — her çalışmada
+   en az 2 yeni öneri veya güncelleme üret
+
+KURAL: /youtube her çalışmasında mutlaka yeni çıktı üretilir.
+Aynı öneriyi tekrarlama — güncelle, geliştir, yenile.
+
 ## ADIM 1 — VERİLEN SÖZ KONTROLÜ
 
 youtube-state-layer.md'yi aç.

@@ -183,5 +183,28 @@ GÜNCELLENEN DOSYALAR
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ---
+### 4. Raporu Kaydet
+
+Terminal çıktısının tamamını şuraya kaydet:
+knowledge/outputs/[YYYY-MM-DD]-youtube-rapor.md
+
+Format:
+```markdown
+# /youtube Raporu — [TARİH]
+
+## ANALİTİK
+[analytics özeti]
+
+## VID-XXX SEO PAKETİ
+[başlık, açıklama, taglar, thumbnail, hook]
+
+## VID-XXX SEO PAKETİ
+[...]
+
+## VİRAL PATTERN'LER
+[yeni pattern'ler]
+```
+
+Bu dosya kalıcı kayıt — silinmez, her çalışmada yeni dosya oluşturulur.
 
 **END /youtube KOMUTU**
