@@ -268,4 +268,21 @@ KONTROL LİSTESİ
 
 ---
 
+---
+
+## FINAL ADIM — SHEETS SYNC
+
+Tüm SEO paketleri hazırlandıktan sonra terminalde çalıştır:
+
+```bash
+python scripts/sync_sheets.py
+```
+
+Bu script:
+- YouTube Analytics verilerini çeker
+- Sheets'teki YouTube Analytics tab'ını günceller
+- Retention, CTR, izlenme, beğeni, yorum verilerini yazar
+
+Sync tamamlanınca /youtube raporu bitmiş sayılır.
+
 **END seo-optimizer**
