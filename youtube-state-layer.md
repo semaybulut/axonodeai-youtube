@@ -1,5 +1,5 @@
 # YOUTUBE STATE LAYER
-**Version:** 1.2
+**Version:** 1.3
 **Owner:** Sema | AxonodeAI
 **Last Updated:** 2026-05-10
 
@@ -17,8 +17,8 @@ Statik kural değil — değişen durum takibi.
 
 ### Kanal Bilgileri
 ```
-Kanal adı: Axonode AI
-Abone sayısı: [güncelle]
+Kanal adı: Sema - Axonode AI
+Abone sayısı: 22
 Toplam video: 1
 Yayın günü: Salı
 Yayın saati: 09:00
@@ -48,21 +48,23 @@ nasıl kullanırsın, onu anlatacağım."
 | Video No | Tip | Konu | Durum | Tarih |
 |----------|-----|------|-------|-------|
 | 001 | Trend Analizi | Python Öğrenmek Yetmiyor | ✅ Yayında | 2026-05-08 |
-| 002 | Tutorial | AI Agent Sistemleri: Veri Biliminde Nasıl Kullanılır? | 📋 SEO Hazır | 2026-05-14 |
-| 003 | Kariyer / POV | Sağlıktan Veri Bilimine — Kimse Söylemedi Bunları | 📋 SEO Hazır | 2026-05-21 |
-| 004 | Trend Analizi | %57 Şirket AI Ajanı Benimsedi — Sen Neredesin? | 📋 SEO Hazır | 2026-05-28 |
+| 002 | Tutorial | AI Agent Kur: Veri Biliminde Adım Adım — 2026 | 📋 SEO Hazır | 2026-05-14 |
+| 003 | Kariyer / POV | Sağlıktan Veri Bilimine Geçtim — Kimse Söylemedi | 📋 SEO Hazır | 2026-05-21 |
+| 004 | Trend Analizi | %57 Şirket AI Ajanı Kullanıyor — Sen Neredesin? | 📋 SEO Hazır | 2026-05-28 |
+| 005 | Girişim / Para | AI ile Freelance: 2026'da Gerçekten Çalışan 3 Yol | 💡 Fikir | 2026-06-04 |
+| 006 | Trend Analizi | Yapay Zeka Seni İşsiz mi Bırakacak? — Dürüst Cevap | 💡 Fikir | 2026-06-11 |
 
 ---
 
 ## İÇERİK DENGE TAKİBİ
 
-### Tip Dağılımı (Rolling — Son 5 Video)
+### Tip Dağılımı (Rolling — Son 5 Video / Plan dahil)
 ```
-Trend Analizi:        1/5
-Tutorial / Araç:      0/5
-Kariyer / POV:        0/5
-Girisim / Para:       0/5
-Vlog:                 0/5
+Trend Analizi:        3/6 (VID-001, VID-004, VID-006)
+Tutorial / Araç:      1/6 (VID-002)
+Kariyer / POV:        1/6 (VID-003)
+Girisim / Para:       1/6 (VID-005)
+Vlog:                 0/6
 ```
 
 ### Topic Dağılımı (Rolling — Son 5 Video)
@@ -103,11 +105,12 @@ Video 006: — (henüz yok)
 ### Video 001 Performansı
 ```
 Yayın tarihi: 2026-05-08
-İzlenme: [güncelle]
-Ortalama izlenme süresi: [güncelle]
-CTR: [güncelle]
-Yorum: [güncelle]
-Abone artışı: [güncelle]
+İzlenme: 199 (2026-05-10 itibarıyla)
+Beğeni: 18 (%9 oran — çok güçlü)
+Yorum: 13 (%6.5 oran — çok güçlü)
+Retention: 20.3% — ALARM (hedef %40-50)
+CTR: Birikme devam ediyor (2026-05-15 sonrası)
+Abone artışı: +5 (toplam 22)
 Content suggesting this video: %27.6
 Top kaynak kanallar:
   - Claude Code YouTube kanalı
@@ -118,13 +121,14 @@ Top kaynak kanallar:
 
 ## STRATEJİK ÖNERİLER (Şu An)
 
-1. **VID-002 SEO paketi hazır:** Başlık, açıklama, taglar, thumbnail brief, hook taslağı tamamlandı (2026-05-10)
-2. **VID-002 Thumbnail:** #f0eee9 arka plan + #f94144 metin — "AI AGENT KUR"
-3. **VID-002 Hook:** Veri + Vadi tipi — "%57 şirket" istatistiği ile aç
+1. **VID-001 Retention Alarmı:** %20.3 — düşük. Olası neden: ilk 30 saniyede Vadi Hook yok. VID-002'de düzelt.
+2. **VID-002 Hook:** Vadi tipi zorunlu — "Bu videonun sonunda AI agent kurmuş olacaksın." İlk 20 saniyede söyle.
+3. **VID-002 Thumbnail:** #f0eee9 + #f94144 metin — "AI AGENT KUR"
 4. **Altyazı:** VID-001 İngilizce altyazı eklendi mi kontrol et
-5. **Yorum:** VID-001 tüm yorumlara cevap ver — ilk 48 saat kritik
-6. **API Kurulumu:**  ✅ Tüm API'ler kurulu ve çalışıyor. Veri 2026-05-15 sonrası anlamlı hale gelir.
-7. **VID-003 ve VID-004:** SEO paketleri hazır, üretim 2026-05-14 sonrası başlayabilir
+5. **Yorum:** VID-001 13 yorum var — hepsine cevap ver (henüz verilmediyse)
+6. **VID-001 beğeni/yorum oranı çok güçlü** — içerik kalitesi OK, sadece hook/yapı sorunu var
+7. **VID-005 ve VID-006:** Fikir aşamasında — VID-004 yayına girdikten sonra SEO paket hazırla
+8. **API:** ✅ Tüm API'ler kurulu. Gerçek CTR/Retention 2026-05-15 sonrası anlamlı hale gelir.
 
 ---
 

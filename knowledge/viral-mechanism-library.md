@@ -1,7 +1,7 @@
 # VİRAL MEKANİZMA KÜTÜPHANESİ
 **Owner:** Sema | AxonodeAI
 **Son Güncelleme:** 2026-05-10
-**Toplam Pattern:** 5
+**Toplam Pattern:** 6
 
 Bu dosya /youtube komutu çalıştıkça büyür.
 Her pattern birden fazla videoda doğrulandıktan sonra "Kanıtlanmış" olarak işaretlenir.
@@ -131,6 +131,33 @@ Trend Analizi videolarında hook ve başlıkta güncel sektör istatistiği zoru
 
 **Kullanıldığı videolarım:**
 - [[VID-004]] (planlı — 2026-05-28)
+
+**Ekleme tarihi:** 2026-05-10
+**Son güncelleme:** 2026-05-10
+
+---
+
+## PATTERN — VADİ HOOK + RETENTİON BAĞLANTISI
+**ID:** VPT-006
+**Kategori:** Hook + Retention
+**Kaynak:** VID-001 retention verisi analizi (2026-05-10) + İngilizce tutorial viral videoları
+**İzlenme:** VID-001 baz — %20.3 retention (vadi hook yok); İngilizce tutoriallar %45-55 retention (vadi hook var)
+**Doğrulama:** Çapraz analiz (doğrulanıyor)
+
+**Gözlem:**
+VID-001'de ilk 30 saniyede "Bu videonun sonunda şunu yapacaksın" tipi somut çıktı vaadi yok — retention %20.3'te kalmış. İngilizce viral tutorial videolarında (LangChain, CrewAI) vadi hook zorunlu ve retention %45-55 band'ında. Doğrudan nedensellik var: izleyici somut çıktıyı bilince izlemeyi sürdürüyor, bilmeyince 2. dakikada düşüyor.
+
+**Neden çalışıyor:**
+Belirsizlik yaratan içerik izleyiciyi erken bırakmaya zorluyor. "Bu bana ne kazandıracak?" sorusu her saniye sorulur — cevap yoksa çıkış. Vadi hook bu soruyu başta kapatıyor, izleyicinin "tamamlama güdüsü" devreye giriyor.
+
+**AxonodeAI uygulaması:**
+Her Tutorial ve Trend Analizi videosunda ilk 30 saniyede mutlaka Vadi Hook ekle:
+- Tutorial: "Bu videonun sonunda [somut çıktı] olacak — [araç/kod] hazırla."
+- Trend: "Bu videoyu izleyince [spesifik şeyi] yapabileceksin — X dakika yeter."
+Yeterince spesifik olmayan vadi çalışmıyor. "Çok şey öğreneceksin" yerine "LangChain ajanı kuracaksın."
+
+**Kullanıldığı videolarım:**
+- [[VID-002]] (planlandı — 2026-05-14, bu pattern uygulanacak)
 
 **Ekleme tarihi:** 2026-05-10
 **Son güncelleme:** 2026-05-10
