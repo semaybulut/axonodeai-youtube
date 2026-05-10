@@ -1,7 +1,7 @@
 # VİRAL MEKANİZMA KÜTÜPHANESİ
 **Owner:** Sema | AxonodeAI
-**Son Güncelleme:** 2026-05-09
-**Toplam Pattern:** 4
+**Son Güncelleme:** 2026-05-10
+**Toplam Pattern:** 5
 
 Bu dosya /youtube komutu çalıştıkça büyür.
 Her pattern birden fazla videoda doğrulandıktan sonra "Kanıtlanmış" olarak işaretlenir.
@@ -107,9 +107,32 @@ Belirsizlik bırakmıyor. İzleyici "bu bana uygun mu?" sorusunu sormadan önce 
 VID-002 hook: "Bu videonun sonunda LangChain ile çalışan bir veri analizi ajanı kurmuş olacaksın. Kod editörünü aç, birlikte yapıyoruz."
 
 **Kullanıldığı videolarım:**
-- [[VID-002]] (planlı)
+- [[VID-002]] (planlı — SEO paketi 2026-05-10 hazırlandı)
 
 **Ekleme tarihi:** 2026-05-09
-**Son güncelleme:** 2026-05-09
+**Son güncelleme:** 2026-05-10
+
+---
+
+## PATTERN — CANLI İSTATİSTİK + SEKTÖR BASINCI
+**ID:** VPT-005
+**Kategori:** Hook + Başlık
+**Kaynak:** Web araştırması — Alphamatch AI, DevTo, Analytics Vidhya (2026-05-10)
+**Doğrulama:** 1 kaynak seti (doğrulanıyor)
+
+**Gözlem:**
+"Mart 2026 itibarıyla şirketlerin %57'si AI agent sistemlerini üretime aldı" gibi gerçek zamanlı sektör istatistikleri başlık veya hook'ta kullanıldığında merak + FOMO kombinasyonu üretiyor. İzleyici "bu beni de etkiliyor mu?" sorusunu sormadan videonun içine çekiliyor. Sayı ne kadar spesifik ve kaynaklı olursa etki o kadar güçlü.
+
+**Neden çalışıyor:**
+Belirsiz "yapay zeka hızla büyüyor" yerine "%57" gibi somut veri beyne işlenebilir. Resmiyet katar. Kanalın araştırma credibility'sini anında kurar. Özellikle izleyici kitlesi profesyoneller olduğunda çalışıyor — çünkü "bu rakamı iş hayatımda kullanabilirim" hissi var.
+
+**AxonodeAI uygulaması:**
+Trend Analizi videolarında hook ve başlıkta güncel sektör istatistiği zorunlu ekle. Kaynak belirt — "Alphamatch AI verilerine göre", "McKinsey raporuna göre" güvenilirlik artırıyor. Örnek: "%57 Şirket AI Ajanı Benimsedi — Veri Bilimciler Ne Yapıyor?" (VID-004 başlığı)
+
+**Kullanıldığı videolarım:**
+- [[VID-004]] (planlı — 2026-05-28)
+
+**Ekleme tarihi:** 2026-05-10
+**Son güncelleme:** 2026-05-10
 
 ---
