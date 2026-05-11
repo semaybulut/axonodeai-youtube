@@ -224,6 +224,11 @@ AJAN 2 başarısız: Kullanıcıyı bildir. Onay al. Mevcut viral-mechanism-libr
 AJAN 3 başarısız: Dur. Hata detayını yaz. Devam etme.
 AJAN 4 başarısız: Dur. Hata detayını yaz. Devam etme.
 
+Süreklilik:
+
+API kesintileri sistemin durması için bir sebep değildir.
+* 1. Ajan (Content Indexer), API çalışmadığında onay alarak knowledge/ altındaki son başarılı snapshot'ı kullanarak zinciri başlatmakla yükümlüdür.
+* Zincirin kırılmaması, "tam otomatik" çalışma prensibinin temelidir.
 
 ---
 

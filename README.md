@@ -201,7 +201,7 @@ Günceller:
 
 ## Ajan Sistemi
 
-4 ajan sırayla çalışır. Biri başarısız olursa zincir durur.
+4 ajan sırayla çalışır. Kritik veri hatası oluşursa ve yedek (snapshot) veri bulunamazsa zincir durur; aksi halde sistem son kayıtlı verilerle devam eder.
 
 | Ajan | Dosya | Görev | Girdi | Çıktı |
 |------|-------|-------|-------|-------|

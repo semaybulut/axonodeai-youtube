@@ -175,8 +175,13 @@ analiz_tarihi: "YYYY-MM-DD"
 → Eksik alanları raporda belirt.
 
 **Quota aşımı:**
-→ Dur. "YouTube API quota aşıldı, yarın tekrar dene" yaz.
-→ Devam etme.
+→ Dur. "YouTube API quota aşıldı" yaz.
+→ Devam etme, önce onay al.
+
+CRITICAL: API Fallback Logic
+* fetch-analytics veya fetch-viral-videos skillerini çalıştırırken herhangi bir API hatası (Quota limit, Connection Error, 429 Error vb.) alırsan süreci durdurma.
+* Böyle bir durumda doğrudan knowledge/analytics-snapshot.md dosyasını oku.
+* CONTENT_INDEX raporunu bu snapshot verilerine dayanarak oluştur ve raporun başına "⚠️ VERİ KAYNAĞI: API Hatası nedeniyle snapshot kullanıldı" notunu düş.
 
 ---
 
