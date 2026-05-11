@@ -1,14 +1,13 @@
 # YOUTUBE STATE LAYER
-**Version:** 1.3
+**Version:** 1.4
 **Owner:** Sema | AxonodeAI
-**Last Updated:** 2026-05-10
+**Last Updated:** 2026-05-11
 
 ---
 
 ## AÇIKLAMA
 
-Bu dosya dinamiktir. Her video sonrası güncellenir.
-Instagram state layer ile aynı mantıkta çalışır.
+Bu dosya dinamiktir. Her /youtube komutu çalıştırıldığında güncellenir.
 Statik kural değil — değişen durum takibi.
 
 ---
@@ -26,12 +25,13 @@ Yayın saati: 09:00
 
 ### Son Yayınlanan Video
 ```
-Video No: 001
+Video No: VID-001
 Başlık: Python Öğrenmek Yetmiyor — 2026'da Veri Bilimi Gerçekten Ne İstiyor?
 Tip: Trend Analizi
 Tarih: 2026-05-08
 URL: https://youtu.be/GBVSl9UgIDQ
-Thumbnail rengi: #414ecf + #d9f103 + #f94144 + #d2c7ff + #f0eee9
+Thumbnail arka plan: #414ecf
+İngilizce altyazı: Kontrol gerekiyor
 ```
 
 ### Verilen Söz
@@ -40,6 +40,12 @@ Thumbnail rengi: #414ecf + #d9f103 + #f94144 + #d2c7ff + #f0eee9
 nasıl kullanırsın, onu anlatacağım."
 → Bir sonraki video bu olmalı.
 ```
+### VID-002 Kararlaştırılan Hook
+Hook tipi: Vadi Hook (Tutorial için zorunlu — VID-001 retention alarmından çıkarılan ders)
+Seçilen metin: "Bu videonun sonunda LangChain ile çalışan bir veri analizi ajanı
+kurmuş olacaksın. Kod editörünü aç, birlikte yapıyoruz."
+Kaynak karar: 2026-05-10-youtube-rapor.md + VPT-006 pattern
+İlk 20 saniyede söylenecek — gecikmesiz.
 
 ---
 
@@ -98,6 +104,10 @@ Video 006: — (henüz yok)
 
 **Renk Tekrarı Kuralı:** Aynı renk arka arkaya 2 kez kullanılmaz.
 
+## ALTYAZI TAKİBİ
+VID-001: Kontrol gerekiyor — eklendi mi?
+VID-002: Henüz yok — çekim sonrası eklenecek
+Kural: Her videoda İngilizce altyazı zorunlu. /youtube-publish çalıştırılmadan önce kontrol edilir.
 ---
 
 ## ANALİTİK SNAPSHOT
@@ -137,16 +147,12 @@ Top kaynak kanallar:
 - Trend Analizi videosu ardı ardına yapma — Tutorial sırası
 - Mavi (#414ecf) thumbnail tekrar kullanma — farklı renk seç
 - AI Agent- Veri Bilimi sözünü erteleme — izleyici bekliyor
-
+- VID-002 hook'unu değiştirme — Vadi Hook olarak kararlaştırıldı (2026-05-10)
 ---
 
 ## VİRAL MEKANİZMA NOTLARI
 
-# VİRAL MEKANİZMA ANALİZİ
-
-## VİRAL MEKANİZMA LİBRARYSİ
-
-→ Bkz: youtube-viral-mekanizma.md
----
+→ Detay: youtube-viral-mekanizma.md
+→ Pattern kütüphanesi: viral-mechanism-library.md
 
 **END STATE LAYER**

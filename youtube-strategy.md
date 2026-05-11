@@ -1,7 +1,7 @@
 # YOUTUBE STRATEGY
 **Version:** 1.1
 **Owner:** Sema | AxonodeAI
-**Last Updated:** 2026-05-08
+**Last Updated:** 2026-05-11
 
 ---
 
@@ -172,16 +172,25 @@ Her 5 videodan 1 tanesi:
 - Sağ: Büyük metin (3-4 kelime max)
 - Arka plan: Kanal renk sistemiyle uyumlu
 
-**Renk Sistemi:**
-- Teknik video: #414ecf arka plan + #d9f103, #f0eee9, #ff6b6b metin
-- Kariyer video: #d2c7ff arka plan + , #414ecf, #f94144, #f7f3e6, #cedd82 metin
-- Kişisel video: #f4b5de arka plan + #fa58a7, #cedd82, #31241f, #f7f3e6 metin
+**Renk Sistemi — TEK REFERANS: youtube-master-prompt.md**
+
+Bu dosyadaki liste genel palet referansıdır.
+Video tipine göre arka plan rengi seçimi ve tekrar kuralı
+youtube-master-prompt.md'deki tabloda tanımlanmıştır — orası önceliklidir.
+
+Genel palet (bilgi amaçlı):
+- Trend Analizi / Teknik: #414ecf arka plan — metin: #d9f103 veya #f94144
+- Tutorial: #f0eee9 arka plan — metin: #f94144
+- Kariyer / POV: #d2c7ff arka plan — metin: #414ecf veya #31241f
+- Kişisel / Vlog: #f4b5de arka plan — metin: #fa58a7 veya #31241f
+
+Not: #ff6b6b, #f7f3e6, #cedd82, #fa58a7 yardımcı aksanlar için kullanılabilir.
 
 **Yasak:**
 - Clickbait görsel (gerçekle uyuşmayan ifade)
 - Çok fazla metin
 - Düşük kontrast
-
+- Aynı arka plan rengini arka arkaya 2 videoda kullanma
 ---
 
 ## KANAL NOTLARI

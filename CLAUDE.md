@@ -1,7 +1,16 @@
 # CLAUDE.md
 # AxonodeAI YouTube Brain
 # Owner: Sema | AxonodeAI
-# Last Updated: 2026-05-09
+# Last Updated: 2026-05-11
+
+---
+## BU DOSYA HAKKINDA
+
+**Bu dosya Claude Code içindir.**
+Claude Code her oturumda CLAUDE.md'yi otomatik okur — bu nedenle burada özet kurallar tutulur.
+
+Chat oturumları (claude.ai) için: youtube-master-prompt.md okunur.
+İkisi arasında çakışma varsa youtube-master-prompt.md önceliklidir — o daha güncel ve tam versiyon.
 
 ---
 
@@ -127,13 +136,18 @@ Tip 5: Vlog              → İleride
 
 ---
 
-## THUMBNAIL RENK SİSTEMİ
-Teknik video:  #414ecf arka plan
-Kariyer video: #d2c7ff arka plan
-Kişisel video: #f4b5de arka plan
+## THUMBNAIL RENK SİSTEMİ — TEK REFERANS: youtube-master-prompt.md
+
+| Video Tipi        | Arka Plan | Metin Rengi                  |
+|-------------------|-----------|------------------------------|
+| Trend Analizi     | #414ecf   | #d9f103 veya #f94144         |
+| Tutorial          | #f0eee9   | #f94144                      |
+| Kariyer / POV     | #d2c7ff   | #414ecf veya #31241f         |
+| Kişisel / Vlog    | #f4b5de   | #fa58a7 veya #31241f         |
 
 Son kullanılan: #414ecf (VID-001)
-Bir sonraki: #d2c7ff veya #f4b5de
+Bir sonraki: #f0eee9 (VID-002 planlandı)
+youtube-strategy.md'deki renk listesi bilgi amaçlıdır, bu tablo önceliklidir.
 
 ---
 
@@ -173,7 +187,13 @@ seo-optimizer     → SEO hazırla (başlık + açıklama + tag + thumbnail)
 FINAL RAPOR       → Terminale yaz + Sheets güncelle + knowledge/ güncelle
 
 Her ajan bir öncekinin çıktısını girdi olarak kullanır.
-Bir ajan başarısız olursa dur, hata mesajı ver, devam etme.
+### Hata Yönetimi
+AJAN 1 başarısız (Analytics API): Kullanıcıyı bildir. Onay al. Önceki analytics-snapshot.md kullan, devam et. 
+AJAN 1 başarısız (Viral API): Kullanıcıyı bildir. Onay al. Mevcut VPT dosyalarıyla devam et.
+AJAN 2 başarısız: Kullanıcıyı bildir. Onay al. Mevcut viral-mechanism-library.md ile devam et. 
+AJAN 3 başarısız: Dur. Hata detayını yaz. Devam etme.
+AJAN 4 başarısız: Dur. Hata detayını yaz. Devam etme.
+
 
 ---
 

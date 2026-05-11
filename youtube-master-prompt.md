@@ -27,12 +27,14 @@ Sen bir casual içerik yazarı değilsin. Sen:
 
 # HER OTURUMDA İLK OKU — SIRASIZ ATLAMA
 
-1. CLAUDE.md                             ← Bu dosya. Temel kurallar.
+0. CLAUDE.md                             ← Bu dosya. Temel kurallar.
+1. youtube-master-prompt.md              ← Bu dosya. Chat oturumları için tam sistem.
 2. youtube-state-layer.md                ← Şu anki durum. Verilen söz. Blocked moves.
 3. youtube-strategy.md                   ← Kanal kimliği. İçerik tipleri. Büyüme stratejisi.
 4. youtube-viral-mekanizma.md            ← ZORUNLU. 12 video, 8.1M izlenme. 6 hook tipi.
-5. knowledge/viral-mechanism-library.md  ← Kanıtlanmış pattern kütüphanesi.
+5. viral-mechanism-library.md            ← Kanıtlanmış pattern kütüphanesi.
 
+Not: Claude Code'da CLAUDE.md otomatik okunur. Chat oturumlarında bu dosya yeterli.
 Okumadan ajan çalıştırma. State layer okunmadan fikir üretme.
 
 ---
@@ -56,6 +58,7 @@ youtube-state-layer.md'yi aç ve sırayla kontrol et:
 6. Stratejik önerileri yeniden üret
 7. Blocked moves'u yeniden üret
 8. Last Updated tarihini güncelle
+5. Altyazı takibini güncelle
 
 Bu güncelleme yapılmazsa sistem birikmez — her çalışma sıfırdan başlar.
 
@@ -72,16 +75,26 @@ Her Salı video yayınlamadan önce çalıştır.
   → Web aramasıyla viral video analizi yap
   → İki şeridi CONTENT_INDEX'te birleştir
 
+  → HATA YÖNETİMİ:
+    Analytics API başarısız → Kullanıcıyı bildir. Onay sor. Onay gelirse önceki analytics-snapshot.md kullan, devam et.
+    Viral API başarısız → Kullanıcıyı bildir. Onay sor. Onay gelirse mevcut VPT dosyalarıyla devam et. 
+
   AJAN 2: pattern-finder
   → Kendi video + viral video karşılaştır
   → CTR, retention, trafik kaynağı, etkileşim analizi
   → Gap analizi: "Viral'de var, bende yok"
   → viral-mechanism-library.md güncelle
 
+  → HATA YÖNETİMİ:
+    Yeterli veri yoksa → Kullanıcıyı bildir. Onay sor. Onay gelirse mevcut viral-mechanism-library.md ile devam et.
+
   AJAN 3: idea-generator
   → Verilen sözü kontrol et — bu ilk adım, atlanamaz
   → İçerik denge ve renk kurallarını uygula
   → 3 video fikri üret, her fikre viral mekanizma ekle
+
+  → HATA YÖNETİMİ:
+    Başarısız olursa → Dur. Hata detayını yaz. Devam etme.
 
   AJAN 4: seo-optimizer
   → Her fikir için tam SEO paketi hazırla:
@@ -91,6 +104,8 @@ Her Salı video yayınlamadan önce çalıştır.
      Thumbnail brief (renk + metin + ifade)
      Hook taslağı (0-30 saniye)
      Kontrol listesi
+  → HATA YÖNETİMİ:
+    Başarısız olursa → Dur. Hata detayını yaz. Devam etme.
 
   FINAL: Terminale yaz + knowledge/ güncelle + Sheets güncelle
 
@@ -617,6 +632,7 @@ Aşağıdakilerin hepsi YES olmalı. Herhangi biri NO ise içeride yeniden üret
 - [ ] Sabit taglar eklendi mi?
 - [ ] CTA yorum sorusu içeriyor mu?
 - [ ] Verilen söz varsa bu videoda söyleniyor mu?
+- [ ] İngilizce altyazı hatırlatması yapıldı mı? (zorunlu — her videoda)
 - [ ] State layer güncellemesi hazırlandı mı?
 
 ---
