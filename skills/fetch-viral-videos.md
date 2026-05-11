@@ -96,6 +96,54 @@ Her /youtube çalışmasında güncellenir
 Data science / AI kariyer kanalları
 100K+ abone, niş uyumlu
 
+### Başlangıç Kanal Listesi (Manuel Eklenecek, Zamanla Büyür)
+
+Türkçe:
+- UC6rmKwzCf-PZh93ylgd1Q5w - Verinin Mutfağı
+- UCsGwZ3006CuJWcA5J3UPVWw - CodeWithBOD
+- UCsT0YIqwnpJCM-mx7-gSA4Q - TEDx Talks
+- UCatnasFAiXUvWwH8NlSdd3A - Evrim Ağacı
+
+İngilizce:
+- UCeVMnSShP_Iviwkknt83cww - CodeWithHarry
+- UC2UXDak6o7rBm23k3Vv5dww - Tina Huang
+- UCKWaEZ-_VweaEx1j62do_vQ - IBM Technology
+- UCV0qA-eDDICsRR9rPcnG7tw - Joma Tech
+- UCLLw7jmFsvfIVaUFsLs8mlQ - Luke Barousse
+- UCWv7vMbMWH4-V0ZXdmDpPBA - Programming with Mosh
+- UC7cs8q-gJRlGwj4A8OmCmXg - Alex The Analyst
+- UCBwmMxybNva6P_5VmxjzwqA - Apna College
+- UCteRPiisgIoHtMgqHegpWAQ - Sundas Khalid
+- UCktMIWomeuj4pwvBb-OBwMw - Infinite Codes
+- UC_fyAp919RnkKmBrMXGwnUQ - Google Career Certificates
+- UCJQJAI7IjbLcpsjWdSzYz0Q - Thu Vu
+- UCU-aPpP8BxAd4mDoP0OL4jQ - Agatha
+- UC8butISFwT-Wl7EV0hUK0BQ - freeCodeCamp.org
+- UCCwwTJbIWJKnGNdT0Dk4b5Q — Ken Jee (data science career)
+- UC7cs8q-gJRlGwj4A8OmCmXg — Alex The Analyst
+- UCiT9RITQ9PW6BhXK0y2jaeg — Nicholas Renotte (ML tutorials)
+- UCA-mWX9CvCTVFWRMb9bKc9w - Dan Martell
+- UCQ4FNww3XoNgqIlkBqEAVCg - Iman Gadzhi
+- UCk2U-Oqn7RXf-ydPqfSxG5g - Mel Robbins
+- UCC8wczy7734jKPhiR2UkS9A - Wholesale Ted
+- UCiGWNa6QK6CiKPvv5-YPv8g - Sabrina Ramonov
+- UCdNj_PP__5kKtjZabuEjbqA - Dan Kieft
+- UCwAnu01qlnVg1Ai2AbtTMaA - Jeff Su
+- UC7kCeZ53sli_9XwuQeFxLqw - Ticker Symbol: YOU
+- UCnhbNiPnXAdMOOHiVACiAvw - The Wade Report
+- UCuvjQYKukKjVyhSVxQibgOw - The Calum Johnson Show
+- UCW0cG4zyFG8oKAlOom4KonQ - Henrik Kniberg
+- UC_RovKmk0OCbuZjA8f08opw - Futurepedia
+- UCcrH_UUxL4KFjS3pwaXvMXA - Sandy Lee AI
+- UCh9nVJoWXmFb7sLApWGcLPQ - codebasics
+- UCkkgrhDCJheXQNIFqUVw0_g - ComputerConcepts
+- UCZf_9SblvM8iTTkouFEcHtA - Marina Wyss - AI & Machine Learning
+- UCDybamfye5An6p-j1t2YMsg - Mo Chen
+- UC0GmdVKZhMM3Rmielp4oVAA - Stefanovic
+- UC1BfD4tqpp-M7Y6zaAypupA - Christine Jiang
+- UC5if156HvOYGeYgpdjFCVCw - Anton's Library
+- UCuyfszBAd3gUt9vAbC1dfqA - Avery Smith | Data Analyst
+
 ---
 
 ## ANALİZ SÜRECİ

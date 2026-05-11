@@ -41,58 +41,62 @@ Bunu yapmak için:
 
 ## DOSYA HARİTASI
 
-## Dosya Haritası
-
-```
 axonodeai-youtube/
 │
-├── CLAUDE.md                        ← Ajanın beyin dosyası
-├── .env                             ← API credentials (git'e gitmiyor).  Asla okuma, asla yazdırma.
+├── CLAUDE.md                            ← Ajanın beyin dosyası
+├── .env                                 ← API credentials (git'e gitmiyor, asla okuma)
 │
 ├── .claude/commands/
-│   ├── youtube.md                   ← /youtube
-│   ├── youtube-konu.md              ← /youtube-konu
-│   ├── youtube-script.md            ← /youtube-script
-│   ├── youtube-seri.md              ← /youtube-seri
-│   └── youtube-publish.md           ← /youtube-publish
+│   ├── youtube.md                       ← /youtube
+│   ├── youtube-konu.md                  ← /youtube-konu
+│   ├── youtube-script.md                ← /youtube-script
+│   ├── youtube-seri.md                  ← /youtube-seri
+│   └── youtube-publish.md               ← /youtube-publish
 │
 ├── agents/
-│   ├── content-indexer.md           ← Ajan 1: Veri topla
-│   ├── pattern-finder.md            ← Ajan 2: Pattern bul
-│   ├── idea-generator.md            ← Ajan 3: Fikir üret
-│   └── seo-optimizer.md             ← Ajan 4: SEO hazırla
+│   ├── content-indexer.md               ← Ajan 1: Veri topla
+│   ├── pattern-finder.md                ← Ajan 2: Pattern bul
+│   ├── idea-generator.md                ← Ajan 3: Fikir üret
+│   └── seo-optimizer.md                 ← Ajan 4: SEO hazırla
 │
 ├── skills/
-│   ├── fetch-analytics.md           ← YouTube Analytics API
-│   ├── fetch-viral-videos.md        ← Viral video analizi
-│   ├── write-sheets.md              ← Google Sheets'e yaz
-│   └── write-knowledge.md           ← knowledge/ klasörüne yaz
+│   ├── fetch-analytics.md               ← YouTube Analytics API
+│   ├── fetch-viral-videos.md            ← Viral video analizi
+│   ├── write-sheets.md                  ← Google Sheets'e yaz
+│   └── write-knowledge.md               ← knowledge/ klasörüne yaz
 │
-├── [sistem dosyaları]
-│   ├── youtube-strategy.md          ← Kanal stratejisi
-│   ├── youtube-seo-system.md        ← SEO kuralları
-│   ├── youtube-state-layer.md       ← Dinamik durum (her çalışmada güncellenir)
-│   ├── youtube-production-template.md ← Video üretim şablonu
-│   ├── youtube-viral-mekanizma.md   ← 12 video, 8.1M izlenme analizi
-│   └── podcast-system.md            ← İleride aktif edilecek
+├── youtube-strategy.md                  ← Kanal stratejisi
+├── youtube-seo-system.md                ← SEO kuralları
+├── youtube-state-layer.md               ← Dinamik durum (her çalışmada güncellenir)
+├── youtube-production-template.md       ← Video üretim şablonu
+├── youtube-viral-mekanizma.md           ← 12 video, 8.1M izlenme analizi
+├── podcast-system.md                    ← PASIF — 5-10 video sonrası aktif edilecek
 │
 ├── knowledge/
-│   ├── my-videos/VID-XXX.md         ← Her video profili + script + performans
-│   ├── viral-patterns/VPT-XXX.md   ← Viral video analizleri
-│   ├── seriler/[seri-slug].md       ← Seri özet dosyaları
-│   ├── viral-mechanism-library.md   ← Kanıtlanmış pattern kütüphanesi
-│   ├── content-calendar.md          ← Yayın takvimi
-│   ├── analytics-snapshot.md        ← Son analitik özeti
-│   └── outputs/                     ← /youtube rapor arşivi
+│   ├── my-videos/
+│   │   └── VID-XXX.md                   ← Her video profili + script + performans
+│   ├── viral-patterns/
+│   │   └── VPT-XXX.md                   ← Viral video analizleri
+│   ├── seriler/
+│   │   └── [seri-slug].md               ← Seri özet dosyaları
+│   ├── viral-mechanism-library.md       ← Kanıtlanmış pattern kütüphanesi
+│   ├── content-calendar.md              ← Yayın takvimi (Sheets ile senkron)
+│   ├── analytics-snapshot.md            ← Son analitik özeti (üzerine yazılır)
+│   └── outputs/
+│       ├── rapor/
+│       │   └── YYYY-MM-DD-youtube-rapor.md   ← Her komut çıktısı, silinmez
+│       ├── snapshot/
+│       │   └── YYYY-MM-DD-snapshot.md        ← Haftalık analytics arşivi, silinmez
+│       └── kanal-haftalik-ortalamalar.md     ← Kanal büyüme takibi, silinmez
 │
 └── scripts/
-    ├── sync_sheets.py               ← Sheets güncelle (her /youtube sonrası)
-    ├── update_sheets_now.py         ← Hızlı güncelleme
-    ├── fix_sheets.py                ← Sheets sıfırdan kur
-    ├── test_api.py                  ← API bağlantı testi
-    ├── setup_sheets.py              ← İlk kurulum
-    └── get_token.py                 ← OAuth token al
-```
+    ├── sync_sheets.py                   ← Sheets güncelle (her /youtube sonrası)
+    ├── update_sheets_now.py             ← Hızlı güncelleme
+    ├── fix_sheets.py                    ← Sheets sıfırdan kur
+    ├── test_api.py                      ← API bağlantı testi
+    ├── setup_sheets.py                  ← İlk kurulum
+    ├── vid_key_helper.py                ← VID key'leri otomatik okur
+    └── get_token.py                     ← OAuth token al (git'e gitmiyor)
 
 ---
 
@@ -212,6 +216,7 @@ seo-optimizer     → SEO hazırla (başlık + açıklama + tag + thumbnail)
 FINAL RAPOR       → Terminale yaz + Sheets güncelle + knowledge/ güncelle
 
 Her ajan bir öncekinin çıktısını girdi olarak kullanır.
+
 ### Hata Yönetimi
 AJAN 1 başarısız (Analytics API): Kullanıcıyı bildir. Onay al. Önceki analytics-snapshot.md kullan, devam et. 
 AJAN 1 başarısız (Viral API): Kullanıcıyı bildir. Onay al. Mevcut VPT dosyalarıyla devam et.
@@ -254,6 +259,22 @@ Video yayınlandığında çalıştır.
 Gerçek analitikleri çeker, performans bağlantısını kurar,
 öğrenen mekanizmayı günceller.
 /youtube-publish VID-XXX --update → 7 gün sonra tam analitik için.
+
+SNAPSHOT ARŞIVLE (sadece --update'te)
+
+### 1. Snapshot dosyası oluştur
+`knowledge/outputs/snapshot/[YYYY-MM-DD]-snapshot.md` olarak kaydet:
+analytics-snapshot.md'nin tam kopyası + üstüne şu başlık:
+# Snapshot — [YYYY-MM-DD]
+*[VID-XXX] --update sonrası kaydedildi*
+
+### 2. Kanal haftalık ortalamaları güncelle
+`knowledge/outputs/kanal-haftalik-ortalamalar.md` dosyasına YENİ SATIR ekle:
+Eski satırlara asla dokunma.
+
+| [bugünün tarihi] | [toplam video sayısı] | [ort CTR] | [ort retention] | [ort izlenme] | [ort beğeni oranı] | [ort yorum oranı] |
+
+Yeterli veri yoksa hücreye — yaz.
 
 ---
 
