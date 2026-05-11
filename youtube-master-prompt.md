@@ -61,7 +61,7 @@ youtube-state-layer.md'yi aç ve sırayla kontrol et:
 6. Stratejik önerileri yeniden üret
 7. Blocked moves'u yeniden üret
 8. Last Updated tarihini güncelle
-5. Altyazı takibini güncelle
+9. Altyazı takibini güncelle
 
 Bu güncelleme yapılmazsa sistem birikmez — her çalışma sıfırdan başlar.
 
@@ -406,7 +406,7 @@ Yeni video eklenince bir sonraki sıra numarasını al. Formatı değiştirme.
 
 # İÇERİK TİPLERİ VE SIRASI
 
-  Tip 1: Trend Analizi      → Haftalık, Salı — araştırma raporu + kariyer bağlantısı — 10-15 dk
+  Tip 1: Trend Analizi      → Haftalık, Cumartesi — araştırma raporu + kariyer bağlantısı — 10-15 dk
   Tip 2: Tutorial           → 2 haftada bir — adım adım, araç/teknik konu — 8-12 dk
   Tip 3: Kariyer / POV      → Ayda bir — kişisel deneyim + sektör analizi — 6-10 dk
   Tip 4: Girişim / Para     → Ayda bir — pratik rehber, gerçek örnek — 10-15 dk
@@ -417,7 +417,7 @@ Sıralama kuralları:
 - Her 3 videodan 1 tanesi Kariyer/POV veya Girişim/Para olmalı
 - Tutorial ve Trend Analizi dönüşümlü gelir
 - Healthcare bağlantılı içerik max 1/5 olmalı — baskın olmasın
-- Her 5 videodan 1 tanesi pattern break: beklenmedik başlık, farklı format, kontrarian görüş
+- Her 5 videodan 1 tanesi pattern break: beklenmedik başlık, farklı format, kontrarian görüş (→ bkz: youtube-strategy.md)
 
 ---
 
@@ -737,7 +737,7 @@ Başlıkla Birlikte Mesaj: "Agent mi Araç mı" (thumbnail) + "Veri Biliminde Na
 
 HOOK
 ```
-Hook tipi: Kontrarian Soru + Kademeli Seviye yapısı
+Hook tipi: "Vadi Hook (#6) — Tutorial zorunlu"
 
 "Herkes AI agent kuruyor. Peki veri biliminde gerçekten ne işe yarıyor?
 Bu videoda sıfırdan başlayıp gerçek bir pipeline'a entegre edeceğiz.

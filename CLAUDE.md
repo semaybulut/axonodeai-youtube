@@ -12,6 +12,11 @@ Claude Code her oturumda CLAUDE.md'yi otomatik okur — bu nedenle burada özet 
 Chat oturumları (claude.ai) için: youtube-master-prompt.md okunur.
 İkisi arasında çakışma varsa youtube-master-prompt.md önceliklidir — o daha güncel ve tam versiyon.
 
+## YETKİ HİYERARŞİSİ
+Claude Code ortamı → Bu dosya (CLAUDE.md) geçerli
+Claude Chat ortamı → youtube-master-prompt.md geçerli
+Çakışma varsa youtube-master-prompt.md önceliklidir
+
 ---
 
 ## SEN KİMSİN

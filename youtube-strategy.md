@@ -129,11 +129,20 @@ Cuma  — Kısa format / Shorts
 - Girişim / Para Kazanma: min 1
 - Healthcare bağlantılı: max 2 (baskın olmasın)
 
-### Pattern Break Kuralı
-Her 5 videodan 1 tanesi:
-- Beklenmedik başlık
-- Farklı format
-- Kontrarian görüş
+## PATTERN BREAK TANIMI
+
+Her 5 videodan 1 tanesi pattern break olmalı.
+idea-generator VID sayısı 5'in katına gelince bunu zorunlu üretir.
+
+Pattern break sayılır:
+- Alışılmadık format: sadece ses anlatım / ekran kaydı / soru-cevap
+- Kontrarian başlık: kanalın genel pozisyonuna ters iddia
+- Alışılmadık süre: normal 10-12 dk ise 3-4 dk veya 20+ dk
+- Renk sistemi dışı thumbnail: tek video için, bir sonraki normale döner
+
+Pattern break sayılmaz:
+- Sadece farklı konu
+- Sadece farklı başlık formülü
 
 ### Seri Kuralı
 - Söz verilen seri devam etmeli

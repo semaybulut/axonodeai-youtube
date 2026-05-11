@@ -1,6 +1,6 @@
 # VİRAL MEKANİZMA KÜTÜPHANESİ
 **Owner:** Sema | AxonodeAI
-**Son Güncelleme:** 2026-05-10
+**Son Güncelleme:** 2026-05-11
 **Toplam Pattern:** 6
 
 Bu dosya /youtube komutu çalıştıkça büyür.
@@ -8,8 +8,22 @@ Her pattern birden fazla videoda doğrulandıktan sonra "Kanıtlanmış" olarak 
 
 ---
 
+## KANITLANMIŞ SAYILMA KRİTERİ
+
+Bir pattern "Kanıtlanmış" olabilmek için:
+- Aynı hook tipi veya başlık formülü **2+ farklı videoda** uygulanmış olmalı
+- Bu videoların her ikisinde şu eşiklerden en az biri sağlanmalı:
+  - Retention > %40, VEYA
+  - CTR > %3, VEYA
+  - Beğeni oranı > %5
+
+Tek videoda iyi sonuç = "Test ediliyor" etiketi kalır.
+İki videoda eşik sağlandı = "Kanıtlanmış" etiketi verilir.
+
+---
+
 ## KANITLANMIŞ PATTERNLER
-[Birden fazla videoda test edilmiş]
+[Henüz yok — video sayısı artınca burası dolacak]
 
 ---
 
@@ -24,6 +38,10 @@ Her pattern birden fazla videoda doğrulandıktan sonra "Kanıtlanmış" olarak 
 **Kaynak video:** VPT-001 — Yeni Yapay Zeka Meslekleri: 120K€, Kod Yok, Diploma Yok (2026 Patlayacak!)
 **İzlenme:** 50.000+ (tahmini)
 **Doğrulama:** 1 video
+
+Kanıtlanmış: EVET / HAYIR
+Kanıt kaynağı: VID-XXX (%X retention), VID-XXX (%X retention)
+Son güncelleme: YYYY-MM-DD
 
 **Gözlem:**
 Başlıkta somut para rakamı veya sayısal veri (120K€, %57, 3 Yol) eklemek CTR'ı artırıyor. "Kod Yok, Diploma Yok" gibi erişim bariyerini kaldıran ifadeler merak + umut kombinasyonu oluşturuyor.
@@ -49,6 +67,10 @@ Girişim veya kariyer videolarında başlığa somut rakam ekle. Örnek: "AI Age
 **İzlenme:** 50.000+ (tahmini)
 **Doğrulama:** 1 video
 
+Kanıtlanmış: EVET / HAYIR
+Kanıt kaynağı: VID-XXX (%X retention), VID-XXX (%X retention)
+Son güncelleme: YYYY-MM-DD
+
 **Gözlem:**
 Başlığın başına yıl + büyük etki iddiası ("Hayatımızı Değiştirecek", "Her Şeyi Değiştiriyor") koymak, konunun hem güncel hem de kritik olduğunu sinyal ediyor. İzleyici "neden şimdi?" sorusunu sormadan cevap alıyor.
 
@@ -72,6 +94,10 @@ Her Trend Analizi başlığında yıl zorunlu. Etki iddiası konuya göre seç: 
 **Kaynak video:** VPT-003 — IT ve AI Sektöründe Yükselen ve Yok Olan Meslekler
 **İzlenme:** 50.000+ (tahmini)
 **Doğrulama:** 1 video
+
+Kanıtlanmış: EVET / HAYIR
+Kanıt kaynağı: VID-XXX (%X retention), VID-XXX (%X retention)
+Son güncelleme: YYYY-MM-DD 
 
 **Gözlem:**
 "Yükselen / Yok Olan", "Kazananlar / Kaybedenler", "Yapanlar / Yapmayanlar" gibi zıt çiftler hem merak hem kayıp korkusu (FOMO) üretiyor. İzleyici kendi pozisyonunu bulmak için videoyu izliyor.
@@ -97,6 +123,10 @@ Beyin zıtlıkları hızlı işler. Kontrast çifti gördüğünde "ben hangisin
 **İzlenme:** 100.000+ (İngilizce kanallar)
 **Doğrulama:** Birden fazla video (İngilizce)
 
+Kanıtlanmış: EVET / HAYIR
+Kanıt kaynağı: VID-XXX (%X retention), VID-XXX (%X retention)
+Son güncelleme: YYYY-MM-DD
+
 **Gözlem:**
 Tutorial videolarında ilk 30 saniyede "Bu videoda şunu yapacaksın: [somut çıktı]" vadi hook'u yüksek retention üretiyor. İzleyici ne öğreneceğini bilince kaygı azalıyor, izlemeye devam ediyor.
 
@@ -119,6 +149,10 @@ VID-002 hook: "Bu videonun sonunda LangChain ile çalışan bir veri analizi aja
 **Kategori:** Hook + Başlık
 **Kaynak:** Web araştırması — Alphamatch AI, DevTo, Analytics Vidhya (2026-05-10)
 **Doğrulama:** 1 kaynak seti (doğrulanıyor)
+
+Kanıtlanmış: EVET / HAYIR
+Kanıt kaynağı: VID-XXX (%X retention), VID-XXX (%X retention)
+Son güncelleme: YYYY-MM-DD
 
 **Gözlem:**
 "Mart 2026 itibarıyla şirketlerin %57'si AI agent sistemlerini üretime aldı" gibi gerçek zamanlı sektör istatistikleri başlık veya hook'ta kullanıldığında merak + FOMO kombinasyonu üretiyor. İzleyici "bu beni de etkiliyor mu?" sorusunu sormadan videonun içine çekiliyor. Sayı ne kadar spesifik ve kaynaklı olursa etki o kadar güçlü.
@@ -143,6 +177,10 @@ Trend Analizi videolarında hook ve başlıkta güncel sektör istatistiği zoru
 **Kaynak:** VID-001 retention verisi analizi (2026-05-10) + İngilizce tutorial viral videoları
 **İzlenme:** VID-001 baz — %20.3 retention (vadi hook yok); İngilizce tutoriallar %45-55 retention (vadi hook var)
 **Doğrulama:** Çapraz analiz (doğrulanıyor)
+
+Kanıtlanmış: EVET / HAYIR
+Kanıt kaynağı: VID-XXX (%X retention), VID-XXX (%X retention)
+Son güncelleme: YYYY-MM-DD
 
 **Gözlem:**
 VID-001'de ilk 30 saniyede "Bu videonun sonunda şunu yapacaksın" tipi somut çıktı vaadi yok — retention %20.3'te kalmış. İngilizce viral tutorial videolarında (LangChain, CrewAI) vadi hook zorunlu ve retention %45-55 band'ında. Doğrudan nedensellik var: izleyici somut çıktıyı bilince izlemeyi sürdürüyor, bilmeyince 2. dakikada düşüyor.
