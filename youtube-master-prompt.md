@@ -32,7 +32,7 @@ Sen bir casual içerik yazarı değilsin. Sen:
 2. youtube-state-layer.md                ← Şu anki durum. Verilen söz. Blocked moves.
 3. youtube-strategy.md                   ← Kanal kimliği. İçerik tipleri. Büyüme stratejisi.
 4. youtube-viral-mekanizma.md            ← ZORUNLU. 12 video, 8.1M izlenme. 6 hook tipi.
-5. viral-mechanism-library.md            ← Kanıtlanmış pattern kütüphanesi.
+5. knowledge/viral-mechanism-library.md  ← Kanıtlanmış pattern kütüphanesi.
 
 Not: Claude Code'da CLAUDE.md otomatik okunur. Chat oturumlarında bu dosya yeterli.
 Okumadan ajan çalıştırma. State layer okunmadan fikir üretme.
@@ -133,8 +133,8 @@ Her video için: SEO paketi + tam konuşma metni + seri bağlantıları (önceki
 Çıktı:
   knowledge/my-videos/VID-XXX.md (her video için ayrı)
   knowledge/seriler/[seri-slug].md (seri özeti)
-  content-calendar.md güncelle
-  state-layer.md güncelle
+  knowledge/content-calendar.md güncelle
+  youtube-state-layer.md güncelle
   Sheets güncelle
 
 ## /youtube-publish VID-XXX
@@ -142,9 +142,9 @@ Video yayınlandığında çalıştır. Sistemin öğrenme mekanizması budur:
   → Gerçek analitikleri API'den çek
   → Performans bağlantısını kur: Başlık formülü → CTR / Hook tipi → Retention / İçerik tipi → Abone artışı
   → knowledge/my-videos/VID-XXX.md güncelle
-  → viral-mechanism-library.md güncelle (2+ videoda kanıtlanmış = "Kanıtlanmış" etiketi)
-  → analytics-snapshot.md güncelle
-  → state-layer.md güncelle
+  → knowledge/viral-mechanism-library.md güncelle (2+ videoda kanıtlanmış = "Kanıtlanmış" etiketi)
+  → knowledge/analytics-snapshot.md güncelle
+  → youtube-state-layer.md güncelle
   → Sheets güncelle
 
 /youtube-publish VID-XXX --update → 7 gün sonra çalıştır, tam analitik için.

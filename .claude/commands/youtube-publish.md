@@ -250,28 +250,20 @@ Retention: [%X]
 
 ## ADIM 6 — SHEETS GÜNCELLE
 
-`skills/write-sheets.md` kurallarını uygula.
-
-**İçerik Takvimi tabı:**
-- VID-XXX satırını bul
-- Durum: "✅ Yayında" olarak güncelle
-- YouTube URL'yi ekle
-
-**YouTube Analytics tabı:**
-- VID-XXX satırını güncelle
-- Tüm analitik değerleri yaz
-- Conditional formatting otomatik çalışacak (CTR <2% kırmızı vs.)
-
-**Oneriler tabı:**
-- VID-XXX performans notunu ekle
-
----
-
 ```bash
 python scripts/sync_sheets.py
 ```
 
----
+**⚠️ İlk 24-72 saatte analytics boş döner.**
+Script "Birikme devam ediyor" yazarsa bu normaldir — Sheets'e o haliyle yazar.
+7 gün sonra `/youtube-publish VID-XXX --update` ile tekrar çalıştır.
+
+**--update flag nedir:**
+`/youtube-publish VID-XXX --update` komutu şunu yapar:
+- Adım 1-3'ü atla (zaten yapıldı)
+- Adım 4'ten başla → tam analitik çek
+- Adım 4B → viral-mechanism-library.md güncelle (2+ video varsa kanıtla)
+- Adım 6 → sync_sheets.py tekrar çalıştır
 
 ## ADIM 7 — PUBLISH RAPORU
 

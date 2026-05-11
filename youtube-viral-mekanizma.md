@@ -136,10 +136,17 @@ Yorum sorusu + sonraki video linki + abone neden
 
 ---
 
-**Bu dosyayı şu bölümlere kopyala:**
-- `youtube-strategy.md` → VIRAL MEKANİZMA LİBRARYSİ bölümü
-- `youtube-state-layer.md` → VİRAL MEKANİZMA NOTLARI bölümü
-- `youtube-production-template.md` → BÖLÜM 8: HOOK ANALİZ NOTLARI bölümü
+## KULLANIM NOTU
+
+Bu dosya okuma kaynağıdır — kopyalanmaz, parçalara bölünmez.
+
+Ajanlar bu dosyayı şu amaçlarla okur:
+- Hook tipi seçimi → HOOK KARAR MATRİSİ bölümü
+- Retention mekanizması seçimi → RETENTION MEKANİZMALARI bölümü
+- CTA seçimi → CTA STRATEJİLERİ bölümü
+
+Kanıtlanmış pattern'ler buradan alınır, test edilir ve
+knowledge/viral-mechanism-library.md'ye "Kanıtlanmış" etiketiyle eklenir.
 
 ## HOOK KARAR MATRİSİ — TEK REFERANS
 

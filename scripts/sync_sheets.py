@@ -1,5 +1,7 @@
 import os
 import subprocess
+import glob
+import re
 from google.oauth2.credentials import Credentials
 from google.auth.transport.requests import Request
 from googleapiclient.discovery import build
@@ -137,9 +139,17 @@ existing = sheets.spreadsheets().values().get(
 existing_vids = [r[0] if r else "" for r in existing.get("values", [])]
 
 # VID key mapping — video ID'den VID-XXX'e
-vid_key_map = {
-    "GBVSl9UgIDQ": "VID-001",
-}
+
+vid_key_map = {}
+for filepath in glob.glob("knowledge/my-videos/VID-*.md"):
+    vid_key = os.path.basename(filepath).replace(".md", "")
+    with open(filepath, "r", encoding="utf-8") as f:
+        content = f.read()
+    match = re.search(r"\*\*video_id:\*\*\s*([A-Za-z0-9_-]{11})", content)
+    if match:
+        vid_key_map[match.group(1)] = vid_key
+
+print(f"  Yüklenen map: {vid_key_map}")
 
 # ── 6. Her video için güncelle ───────────
 for item in video_details.get("items", []):

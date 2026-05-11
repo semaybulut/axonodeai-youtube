@@ -31,6 +31,7 @@ Ne zaman: Yeni video eklenince veya analytics güncellenince
 **Tip:** [Trend Analizi / Tutorial / Kariyer / Girişim]
 **Yayın Tarihi:** YYYY-MM-DD
 **YouTube URL:** https://youtu.be/[video_id]
+**video_id:** [video_id]
 **Durum:** [Planlandı / Yayında / Arşiv]
 **Son Güncelleme:** YYYY-MM-DD
 

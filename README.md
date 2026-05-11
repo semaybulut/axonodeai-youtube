@@ -292,6 +292,7 @@ python scripts/get_token.py       # tarayıcı açılır, izin ver
 # token'ları .env'e yapıştır
 python scripts/setup_sheets.py    # Sheets tablarını kur
 python scripts/test_api.py        # her şeyin çalıştığını doğrula
+pip install youtube-transcript-api
 ```
 
 ---

@@ -49,7 +49,7 @@ youtube-state-layer.md'yi aç.
 "Verilen Söz" bölümüne bak.
 
 Eğer verilen söz varsa:
-→ İlk fikir MUTLAKA verilen söz olmalı
+→ İlk fikir MUTLAKA verilen söz olmalı- youtube-state-layer.md'yi oku
 → Tip, konu, yaklaşım verilen söze uygun olmalı
 → Bu kurala istisna yok
 
@@ -237,7 +237,7 @@ tip: "Kariyer / POV",
 ## SINIRLAR
 
 - Strateji kurallarını esnetme, uygula
-- Verilen sözü atlama, asla
+- Verilen sözü atlama, asla - youtube-state-layer.md'yi oku
 - Thumbnail rengini tekrarlama
 - Veri gerekçesi olmayan fikir önerme
 - Sema'nın nişi dışına çıkma:

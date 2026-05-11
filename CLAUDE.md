@@ -40,39 +40,59 @@ Bunu yapmak için:
 ---
 
 ## DOSYA HARİTASI
+
+## Dosya Haritası
+
+```
 axonodeai-youtube/
-├── CLAUDE.md                          ← Bu dosya. Her oturumda ilk oku.
-├── .env                               ← API anahtarları. Asla okuma, asla yazdırma.
+│
+├── CLAUDE.md                        ← Ajanın beyin dosyası
+├── .env                             ← API credentials (git'e gitmiyor).  Asla okuma, asla yazdırma.
 │
 ├── .claude/commands/
-│   └── youtube.md                     ← /youtube komutu. 4 ajanı sırayla çalıştırır.
+│   ├── youtube.md                   ← /youtube
+│   ├── youtube-konu.md              ← /youtube-konu
+│   ├── youtube-script.md            ← /youtube-script
+│   ├── youtube-seri.md              ← /youtube-seri
+│   └── youtube-publish.md           ← /youtube-publish
 │
 ├── agents/
-│   ├── content-indexer.md             ← Ajan 1: Veri topla
-│   ├── pattern-finder.md              ← Ajan 2: Pattern bul
-│   ├── idea-generator.md              ← Ajan 3: Fikir üret
-│   └── seo-optimizer.md               ← Ajan 4: SEO hazırla
+│   ├── content-indexer.md           ← Ajan 1: Veri topla
+│   ├── pattern-finder.md            ← Ajan 2: Pattern bul
+│   ├── idea-generator.md            ← Ajan 3: Fikir üret
+│   └── seo-optimizer.md             ← Ajan 4: SEO hazırla
 │
 ├── skills/
-│   ├── fetch-analytics.md             ← YouTube Analytics API (OAuth)
-│   ├── fetch-viral-videos.md          ← Viral video analizi
-│   ├── write-sheets.md                ← Google Sheets'e yaz
-│   └── write-knowledge.md             ← knowledge/ klasörüne yaz
+│   ├── fetch-analytics.md           ← YouTube Analytics API
+│   ├── fetch-viral-videos.md        ← Viral video analizi
+│   ├── write-sheets.md              ← Google Sheets'e yaz
+│   └── write-knowledge.md           ← knowledge/ klasörüne yaz
+│
+├── [sistem dosyaları]
+│   ├── youtube-strategy.md          ← Kanal stratejisi
+│   ├── youtube-seo-system.md        ← SEO kuralları
+│   ├── youtube-state-layer.md       ← Dinamik durum (her çalışmada güncellenir)
+│   ├── youtube-production-template.md ← Video üretim şablonu
+│   ├── youtube-viral-mekanizma.md   ← 12 video, 8.1M izlenme analizi
+│   └── podcast-system.md            ← İleride aktif edilecek
 │
 ├── knowledge/
-│   ├── my-videos/                     ← Her video için VID-XXX.md
-│   ├── viral-patterns/                ← Ham viral analiz dosyaları
-│   ├── viral-mechanism-library.md     ← Temizlenmiş pattern kütüphanesi
-│   ├── content-calendar.md            ← Yayın takvimi
-│   └── analytics-snapshot.md          ← Son analytics özeti
+│   ├── my-videos/VID-XXX.md         ← Her video profili + script + performans
+│   ├── viral-patterns/VPT-XXX.md   ← Viral video analizleri
+│   ├── seriler/[seri-slug].md       ← Seri özet dosyaları
+│   ├── viral-mechanism-library.md   ← Kanıtlanmış pattern kütüphanesi
+│   ├── content-calendar.md          ← Yayın takvimi
+│   ├── analytics-snapshot.md        ← Son analitik özeti
+│   └── outputs/                     ← /youtube rapor arşivi
 │
-└── [mevcut sistem dosyaları]
-    ├── youtube-strategy.md
-    ├── youtube-seo-system.md
-    ├── youtube-state-layer.md
-    ├── youtube-production-template.md
-    ├── youtube-viral-mekanizma.md      ← MUTLAKA OKU — 12 video analizi, 8.1M izlenme
-    └── podcast-system.md
+└── scripts/
+    ├── sync_sheets.py               ← Sheets güncelle (her /youtube sonrası)
+    ├── update_sheets_now.py         ← Hızlı güncelleme
+    ├── fix_sheets.py                ← Sheets sıfırdan kur
+    ├── test_api.py                  ← API bağlantı testi
+    ├── setup_sheets.py              ← İlk kurulum
+    └── get_token.py                 ← OAuth token al
+```
 
 ---
 
