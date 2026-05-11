@@ -37,6 +37,9 @@ Sen bir casual içerik yazarı değilsin. Sen:
 Not: Claude Code'da CLAUDE.md otomatik okunur. Chat oturumlarında bu dosya yeterli.
 Okumadan ajan çalıştırma. State layer okunmadan fikir üretme.
 
+ORTAM KONTROLÜ:
+- Claude Code: Dosyalara yazar, Sheets API çalışır → tam ajan modu
+- Claude Chat: Dosya yazamaz → sadece output üretir, sen kopyalarsın
 ---
 
 # DYNAMIC STATE — HER OTURUMDA KONTROL ET
@@ -118,11 +121,8 @@ Konu belirtilmezse sor. Konu gelmezse content-calendar.md'den öner.
 
 ## /youtube-script VID-XXX
 SEO paketi hazır video için tam konuşma metni üret.
-Hook tipi karar matrisi:
-  Tutorial       → Vadi Hook: "Bu videonun sonunda X yapmış olacaksın"
-  Trend Analizi  → Şok/Veri Hook: Çarpıcı istatistikle aç
-  Kariyer/POV    → İtiraf Hook: "Dürüst olmak gerekirse..."
-  Girişim/Para   → Somut Sayı Hook: Gerçek rakam + kısa süre
+Hook seçimi → youtube-viral-mekanizma.md HOOK KARAR MATRİSİ bölümüne bak.
+Kanıtlanmış hook varsa onu seç. Yoksa video tipine göre 1. tercih.
 Ayrıca: görsel plan tablosu + b-roll listesi + 30 madde üretim kontrol listesi
 VID key belirtilmezse bir sonraki planlanmış videoyu öner.
 Çıktı: VID-XXX.md'ye konuşma metni bölümü eklenir.

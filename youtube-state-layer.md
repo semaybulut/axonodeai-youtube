@@ -40,12 +40,6 @@ Thumbnail arka plan: #414ecf
 nasıl kullanırsın, onu anlatacağım."
 → Bir sonraki video bu olmalı.
 ```
-### VID-002 Kararlaştırılan Hook
-Hook tipi: Vadi Hook (Tutorial için zorunlu — VID-001 retention alarmından çıkarılan ders)
-Seçilen metin: "Bu videonun sonunda LangChain ile çalışan bir veri analizi ajanı
-kurmuş olacaksın. Kod editörünü aç, birlikte yapıyoruz."
-Kaynak karar: 2026-05-10-youtube-rapor.md + VPT-006 pattern
-İlk 20 saniyede söylenecek — gecikmesiz.
 
 ---
 

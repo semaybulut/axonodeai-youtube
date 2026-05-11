@@ -140,3 +140,19 @@ Yorum sorusu + sonraki video linki + abone neden
 - `youtube-strategy.md` → VIRAL MEKANİZMA LİBRARYSİ bölümü
 - `youtube-state-layer.md` → VİRAL MEKANİZMA NOTLARI bölümü
 - `youtube-production-template.md` → BÖLÜM 8: HOOK ANALİZ NOTLARI bölümü
+
+## HOOK KARAR MATRİSİ — TEK REFERANS
+
+Video tipine göre zorunlu hook sıralaması:
+
+| Video Tipi     | 1. Tercih                  | 2. Tercih              | Yasak               |
+|----------------|----------------------------|------------------------|---------------------|
+| Tutorial       | Vadi Hook (#6)             | Kademeli Seviye (#4)   | Uzun öz-tanıtım     |
+| Trend Analizi  | Karşı-sezgisel Sayı (#2)   | Kontrarian Soru (#5)   | Belirsiz açılış     |
+| Kariyer / POV  | İtiraf (#3)                | Keşke Söyleseydi (#1)  | Otorite iddiası     |
+| Girişim / Para | Somut Sayı (#2 varyant)    | Vaat (#6 varyant)      | Duygusal soyutlama  |
+
+Güncelleme kuralı:
+- Bir hook tipi 2+ videoda %40+ retention getirdiyse → o tip için "Kanıtlanmış" etiketi ekle
+- Kanıtlanmış hook varsa ajan 1. tercih yerine kanıtlanmışı seçer
+- Kanıtlanmış hook yoksa tablodaki 1. tercih geçerli
