@@ -177,6 +177,70 @@ Bir ajan başarısız olursa dur, hata mesajı ver, devam etme.
 
 ---
 
+## KOMUT SİSTEMİ
+
+Beş komut mevcut. Her biri `.claude/commands/` altında tanımlı.
+
+### /youtube
+Ana haftalık komut. 4 ajan sırayla çalışır.
+Analitik toplar, viral pattern bulur, 3 video önerir, SEO paketi hazırlar.
+Her Salı video yayınlamadan önce çalıştır.
+
+### /youtube-konu "konu başlığı"
+Belirli bir konu için araştırma + SEO paketi.
+İki katmanlı araştırma: web search + viral video analizi.
+Konu belirtilmezse sorar. Konu gelmezse takvimden önerir.
+Çıktı: SEO paketi + VID-XXX.md dosyası.
+
+### /youtube-script VID-XXX
+SEO paketi hazır video için tam konuşma metni.
+Hook seçimi, bölümler, görsel plan, b-roll listesi, üretim kontrol listesi.
+VID key belirtilmezse bir sonraki planlanmış videoyu önerir.
+Çıktı: VID-XXX.md'ye konuşma metni eklenir.
+
+### /youtube-seri "seri adı" [sayı]
+Çok videolu seri planı + SEO + script.
+Sayı belirtilirse direkt üretir.
+Sayı belirtilmezse ajan önerir, onay bekler — onaysız üretmez.
+Çıktı: Her video için VID-XXX.md + knowledge/seriler/[seri].md
+
+### /youtube-publish VID-XXX
+Video yayınlandığında çalıştır.
+Gerçek analitikleri çeker, performans bağlantısını kurar,
+öğrenen mekanizmayı günceller.
+/youtube-publish VID-XXX --update → 7 gün sonra tam analitik için.
+
+---
+
+## KOMUT KARAR AĞACI
+Haftalık rutin → /youtube
+Belirli konu var → /youtube-konu "konu"
+Script lazım → /youtube-script VID-XXX
+Seri planlayacaksın → /youtube-seri "seri" [sayı]
+Video yayınlandı → /youtube-publish VID-XXX
+7 gün geçti → /youtube-publish VID-XXX --update
+
+---
+
+## PERFORMANS BAĞLANTISI SİSTEMİ
+
+Her video yayınlandıktan sonra `/youtube-publish` şu bağlantıları kurar:
+Başlık formülü → CTR
+Hook tipi      → Retention
+İçerik tipi   → Abone artışı
+
+3+ video verisi birikince ajan şunu yapabilir:
+"Bu konu tipinde Soru formülü geçmişte ort. %4.1 CTR getirdi,
+İddia formülü %2.8. Bu video için Soru formülü öneriyorum."
+
+Bu veriler şuralarda tutulur:
+- `knowledge/my-videos/VID-XXX.md` → her video için ayrı
+- `knowledge/viral-mechanism-library.md` → birleşik tablo
+- `knowledge/analytics-snapshot.md` → kanal ortalamaları
+
+
+---
+
 ## GÜNCELLEME TALİMATI
 
 Her /youtube çalışmasından sonra şunlar güncellenir:
