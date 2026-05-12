@@ -44,6 +44,12 @@ Retention düştüğü dakika nerede?
 O dakikada ne anlatılıyor?
 Alarm: Retention %30 altındaysa → "hook veya içerik sorunu" işaretle
 
+### Retention Recovery Playbook (Eşik altı için zorunlu)
+Eğer Retention < %30 ise şu aksiyonları raporla:
+1. **Highlight Fix:** YouTube Studio Editor ile videonun ilk 10 saniyesindeki ölü noktaları işaretle.
+2. **Comment Hook:** Sabitlenmiş yorumda videonun en yüksek retention aldığı dakikayı merak unsuruyla paylaş.
+3. **Loop Check:** Retention'ın en düşük olduğu noktada anlatılan konuyu "Zayıf Konu" olarak işaretle ve bir daha kullanma.
+
 ### Trafik Kaynağı Analizi
 
 Öneri sisteminden gelen trafik yüzdesi nedir?
