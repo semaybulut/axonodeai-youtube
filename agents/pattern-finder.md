@@ -17,11 +17,14 @@ Yorum yap, analiz et — bu ajanın işi bu.
 
 CONTENT_INDEX (content-indexer çıktısı)
 knowledge/viral-mechanism-library.md (önceki pattern'ler)
+knowledge/outputs/kanal-haftalik-ortalamalar.md (Kanal ortalaması referansı)
 youtube-state-layer.md (mevcut durum)
 
 ---
 
 ## ANALİZ 1 — KENDİ KANAL PERFORMANSI
+
+*Veri Güvenliği Kuralı:* Eğer kanal-haftalik-ortalamalar.md dosyasında 3'ten az video verisi varsa, kanal geneli bir 'başarı/başarısızlık' analizi yapma; sadece mevcut videonun (VID-001) performansını bireysel olarak değerlendir ve "Kanal geneli trend analizi için veri yetersiz" notu düş.
 
 ### CTR Analizi
 Her video için:

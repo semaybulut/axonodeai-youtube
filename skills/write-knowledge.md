@@ -13,12 +13,18 @@ Bu skill /youtube komutunun final adımında çağrılır.
 ---
 
 ## YAZILACAK DOSYALAR
+
 knowledge/
-├── my-videos/VID-XXX.md          ← Her video için profil
-├── viral-patterns/VPT-XXX.md     ← Her viral video için analiz
-├── viral-mechanism-library.md    ← Temizlenmiş pattern kütüphanesi
-├── content-calendar.md           ← Yayın takvimi
-└── analytics-snapshot.md         ← Son analytics özeti
+├── my-videos/VID-XXX.md           ← Her video için profil
+├── viral-patterns/VPT-XXX.md      ← Her viral video için analiz
+├── viral-mechanism-library.md     ← Temizlenmiş pattern kütüphanesi
+├── content-calendar.md            ← Yayın takvimi
+├── analytics-snapshot.md          ← Son analytics özeti (Geçici/Üzerine yazılır)
+└── outputs/
+    ├── rapor/                     ← Her /youtube ve /youtube-seri çıktısı (Kalıcı)
+    ├── snapshot/                  ← Haftalık analytics arşivi (Kalıcı)
+    └── kanal-haftalik-ortalamalar.md ← Kanal büyüme takibi (Kalıcı/Satır eklenir)
+
 ---
 
 ## DOSYA 1 — VID-XXX.md (Her Video İçin)
@@ -298,6 +304,28 @@ Mantık: Üzerine yaz — sadece son snapshot tutulur
 **Son Güncelleme:** YYYY-MM-DD HH:MM
 
 ---
+## DOSYA 6 — RAPORLAR (ARŞİV)
+Konum: knowledge/outputs/rapor/YYYY-MM-DD-youtube-rapor.md
+Ne zaman: Her /youtube veya /youtube-seri vb komutları sonunda.
+Mantık: Yeni dosya oluşturulur, eskiler silinmez.
+
+---
+
+## DOSYA 7 — SNAPSHOT ARŞİVİ
+Konum: knowledge/outputs/snapshot/YYYY-MM-DD-snapshot.md
+Ne zaman: /youtube-publish VID-XXX --update sonrasında.
+Mantık: analytics-snapshot.md içeriğinin o günkü kopyasıdır.
+
+---
+## DOSYA 8 — KANAL HAFTALIK ORTALAMALAR
+Konum: knowledge/outputs/kanal-haftalik-ortalamalar.md
+Ne zaman: Her /youtube-publish --update çalışınca.
+Mantık: En alta YENİ SATIR ekle. Eski satırları asla değiştirme.
+
+Tarih,Video Sayısı,Ort. CTR,Ort. Retention,Ort. İzlenme,Ort. Beğeni,Ort. Yorum
+[YYYY-MM-DD],[X],[%X],[%X],[Sayı],[%X],[%X]
+
+---
 
 ## KANAL ÖZETI
 
@@ -350,6 +378,7 @@ kontrol edilmesi gereken noktalar]
 ## YAZMA KURALLARI
 Mevcut dosyayı önce oku
 Sadece değişen kısmı güncelle
+Klasör Kontrolü: Yazma işleminden önce outputs/rapor/ ve outputs/snapshot/ klasörlerinin varlığını kontrol et, yoksa oluştur.
 Bağlantıları [[VID-XXX]] formatında yaz
 Tarihleri her zaman YYYY-MM-DD formatında yaz
 Boş alan bırakma — veri yoksa "Henüz veri yok" yaz
@@ -360,8 +389,10 @@ Silme yapma — güncelle veya ekle
 ## HATA YÖNETİMİ
 
 **Dosya bulunamıyor:**
-→ Yeni oluştur, şablonu kullan
+→ Klasör Erişimi Yok: "knowledge/outputs/ alt klasörlerine erişilemiyor" uyarısı ver ve dur.
+→ Kullanıcıya sor onay al yeni oluştur, şablonu kullan
 → "VID-XXX.md oluşturuldu" yaz
+→ Snapshot Eksik: Eğer arşivleme sırasında kaynak analytics-snapshot.md bulunamazsa, kullanıcıya bildir.
 
 **Yazma izni yok:**
 → "knowledge/ klasörüne yazma izni yok" yaz

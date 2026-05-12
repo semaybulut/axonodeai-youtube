@@ -1,4 +1,5 @@
-# /youtube-publish
+# COMMAND: /youtube-publish VID-XXX
+# Video yayın kaydı ve performans takibi
 **Versiyon:** 2.0
 **Owner:** Sema | AxonodeAI
 
@@ -22,6 +23,12 @@ Gerçek verileri çek, sisteme kaydet, öğrenen mekanizmayı güncelle.
 - `knowledge/viral-mechanism-library.md` — mevcut pattern'ler
 - `youtube-state-layer.md` — mevcut durum
 - `skills/fetch-analytics.md` — API çağrı kuralları
+
+---
+## STANDART AKIŞ (Parametresiz)
+1.  Videonun ilk yayın verilerini API'den çek.
+2.  `knowledge/my-videos/VID-XXX.md` dosyasını "Yayında" durumuna çek.
+3.  Sheets "Icerik Takvimi" sekmesini "✅ Yayında" olarak güncelle.
 
 ---
 
@@ -319,18 +326,27 @@ Sonraki Adım:
 
 ---
 
-## ADIM 8 — 7 GÜN GÜNCELLEME (--update)
+## ADIM 8 — 7 GÜN GÜNCELLEME AKIŞI (--update)
 
-`/youtube-publish VID-XXX --update` çalıştırılırsa:
-
+Eğer `--update` bayrağı kullanılmışsa (7 gün sonra):
 Aynı adımları tekrar et, farklar:
 - VID dosyasını "7 Gün Analitik" başlığıyla güncelle
-- Kanal ortalamalarını yeniden hesapla
-- Viral mechanism library'yi yeniden değerlendir:
-  - İlk 48 saatte iyi ama 7 günde düşen → "Test ediliyor" olarak kal
-  - 7 günde de iyi → "Kanıtlanmış" olarak işaretle
-  - İlk 48 saatte düşük ama 7 günde toparlandı → "Arama trafiği gecikmeli geliyor" notu ekle
 
----
+1.  **Analitik Çekimi**: API üzerinden tam performans verilerini çek.
+2.  **Snapshot Arşivi**: 
+    *   Mevcut `analytics-snapshot.md` dosyasının bir kopyasını oluştur.
+    *   Bu kopyayı `knowledge/outputs/snapshot/YYYY-MM-DD-snapshot.md` olarak kaydet.
+3.  **Haftalık Ortalama**: Kanal ortalamalarını yeniden hesapla
+    *   `knowledge/outputs/kanal-haftalik-ortalamalar.md` dosyasını aç.
+    *   Dosyanın sonuna bugünün tarihi ve güncel kanal ortalamalarını içeren **YENİ BİR SATIR** ekle.
+    *   *Kural*: Eski satırlara asla dokunma, sadece ekleme yap.
+4.  **Pattern Doğrulama**: Verileri `knowledge/viral-mechanism-library.md` ile karşılaştır ve pattern'i güncelle. Viral mechanism library'yi yeniden değerlendir:
+    - İlk 48 saatte iyi ama 7 günde düşen → "Test ediliyor" olarak kal
+    - 7 günde de iyi → "Kanıtlanmış" olarak işaretle
+    - İlk 48 saatte düşük ama 7 günde toparlandı → "Arama trafiği gecikmeli geliyor" notu ekle
+
+## HATA YÖNETİMİ
+- Video ID bulunamazsa dur ve uyar.
+- Veri yetersizse (3 videodan az) ortalamalar tablosuna ilgili hücre için "Veri yetersiz" yaz.
 
 **END /youtube-publish**

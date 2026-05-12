@@ -1,0 +1,1 @@
+*Önemli Not:* Kanal genelindeki büyüme eğilimlerinin ve ortalamaların (CTR, Retention vb.) istatistiksel olarak anlamlı ve güvenilir sayılabilmesi için sistemde en az 3 farklı videonun verisi bulunmalıdır. Tek video verileri sadece başlangıç referansı niteliğindedir.

@@ -95,7 +95,6 @@ axonodeai-youtube/
     ├── fix_sheets.py                    ← Sheets sıfırdan kur
     ├── test_api.py                      ← API bağlantı testi
     ├── setup_sheets.py                  ← İlk kurulum
-    ├── vid_key_helper.py                ← VID key'leri otomatik okur
     └── get_token.py                     ← OAuth token al (git'e gitmiyor)
 
 ---

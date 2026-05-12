@@ -1,4 +1,5 @@
-# /youtube
+# COMMAND: /youtube
+# Haftalık rutin analiz ve planlama komutu
 
 AxonodeAI YouTube kanalı için tam analiz ve içerik üretim komutu.
 Bu komut çalıştırılınca 4 ajan sırayla devreye girer.
@@ -14,6 +15,14 @@ Her ajan bir öncekinin çıktısını girdi olarak kullanır.
 3. youtube-strategy.md → içerik tipi kuralları
 
 Okumadan ajan çalıştırma.
+
+---
+
+## AKIŞ
+1.  **Ajan 1 (content-indexer)**: Veri topla (API veya Snapshot).
+2.  **Ajan 2 (pattern-finder)**: Pattern ve Gap analizi yap.
+3.  **Ajan 3 (idea-generator)**: 3 yeni video fikri üret.
+4.  **Ajan 4 (seo-optimizer)**: SEO paketlerini hazırla.
 
 ---
 
@@ -111,6 +120,19 @@ Başarısız olunca: dur, hata mesajını yaz, devam etme.
 
 ## FINAL ADIM — Yaz ve Raporla
 
+---
+
+## ÇIKTI VE KAYIT SÜRECİ
+Tüm ajanlar işini bitirdiğinde:
+
+1.  **Terminal**: Raporu özet olarak ekrana yaz.
+2.  **Skill (write-knowledge)**: 
+    *   Final raporunu şu konuma kaydet: `knowledge/outputs/rapor/YYYY-MM-DD-youtube-rapor.md`.
+    *   `knowledge/analytics-snapshot.md` dosyasını üzerine yazarak güncelle.
+3.  **Skill (write-sheets)**: Oneriler ve Icerik Takvimi sekmelerini güncelle.
+
+---
+
 ### 1. Google Sheets Güncelle
 skills/write-sheets.md'yi çalıştır:
 - İçerik Takvimi sheet'i → yeni video fikirleri ekle
@@ -186,7 +208,7 @@ GÜNCELLENEN DOSYALAR
 ### 4. Raporu Kaydet
 
 Terminal çıktısının tamamını şuraya kaydet:
-knowledge/outputs/[YYYY-MM-DD]-youtube-rapor.md
+knowledge/outputs/rapor/YYYY-MM-DD-youtube-rapor.md
 
 Format:
 ```markdown
@@ -206,5 +228,9 @@ Format:
 ```
 
 Bu dosya kalıcı kayıt — silinmez, her çalışmada yeni dosya oluşturulur.
+
+## HATA YÖNETİMİ
+- Herhangi bir adımda API hatası alınırsa `knowledge/analytics-snapshot.md` üzerinden devam et.
+- Rapor kaydedilirken `outputs/rapor/` klasörünün varlığını kontrol et, yoksa oluştur. 
 
 **END /youtube KOMUTU**
