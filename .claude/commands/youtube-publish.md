@@ -347,6 +347,10 @@ Aynı adımları tekrar et, farklar:
     *   `knowledge/outputs/kanal-haftalik-ortalamalar.md` dosyasını aç.
     *   Dosyanın sonuna bugünün tarihi ve güncel kanal ortalamalarını içeren **YENİ BİR SATIR** ekle.
     *   *Kural*: Eski satırlara asla dokunma, sadece ekleme yap.
+    *   Hesaplama kaynağı: `knowledge/my-videos/` altındaki tüm "Durum: Yayında" olan VID-XXX.md dosyaları.
+    *   Her metrik için aritmetik ortalama: Σ(tüm yayındaki videolar) / yayındaki video sayısı.
+    *   "Ort. İzlenme" video başına ortalamadır — toplam kanal izlenmesi değil.
+    *   Veri eksik videolar (CTR henüz birikmemiş vb.) hesaplamaya dahil edilmez, tabloya "Kısmi veri" notu düşülür.
 4.  **Pattern Doğrulama**: Verileri `knowledge/viral-mechanism-library.md` ile karşılaştır ve pattern'i güncelle. Viral mechanism library'yi yeniden değerlendir:
     - İlk 48 saatte iyi ama 7 günde düşen → "Test ediliyor" olarak kal
     - 7 günde de iyi → "Kanıtlanmış" olarak işaretle

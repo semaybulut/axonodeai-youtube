@@ -189,7 +189,7 @@ Raporu oluştururken şu soruyu sor:
 
 Kaynaklar:
 - pattern-finder çıktısı → gaps ve alarmlar
-- seo-optimizer çıktısı → reddedilen başlık formülleri
+- seo-optimizer çıktısı → 60 karakter kontrolünde kısaltılan veya değiştirilen başlıklar
 - CONTENT_INDEX.own_performance → düşük retention / CTR alarm veren videolar
 
 **A) youtube-state-layer.md → BLOCKED MOVES bölümüne ekle:**
