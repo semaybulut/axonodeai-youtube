@@ -20,6 +20,10 @@
 | VID-011 | Kariyer / POV | Veri Bilimi 2. Ay — İlk Projem, İlk Hayal Kırıklığı | 2026-08-25 | Script Hazır (taslak) | Sıfırdan Veri Bilimcisi 4/6 |
 | VID-012 | Kariyer / POV | 3 Ay Veri Bilimi — Şimdi Ne Biliyorum, Devam mı? | 2026-09-22 | Script Hazır (taslak) | Sıfırdan Veri Bilimcisi 5/6 |
 | VID-013 | Kariyer / POV | 4 Ay Veri Bilimi — Ne Değişti, Ne Öğrendim? (Seri Sonu) | 2026-10-20 | Script Hazır (taslak) | Sıfırdan Veri Bilimcisi 6/6 |
+| VID-014 | Kariyer / POV | Veri Dünyasında 3 Ana Yol — Hangisi Sana Uygun? (2026) | 2026-11-03 | Planlandı | Veri Dünyasında Roller 1/4 |
+| VID-015 | Kariyer / POV | Data Analyst Ailesi — 8 Rol, Hangisi Sana Uyar? (2026) | 2026-11-10 | Planlandı | Veri Dünyasında Roller 2/4 |
+| VID-016 | Tutorial | Data Engineer Ailesi — Dashboard Nasıl Oluşur? (2026) | 2026-11-17 | Planlandı | Veri Dünyasında Roller 3/4 |
+| VID-017 | Trend Analizi | Veri Bilimci mi, AI Engineer mı? — 2026'da Ne Değişti | 2026-11-24 | Planlandı | Veri Dünyasında Roller 4/4 |
 
 ---
 
@@ -34,16 +38,16 @@ Arşiv      → Yayından kaldırıldı
 
 ---
 
-## İÇERİK DENGE (VID-001 → VID-013 toplam)
+## İÇERİK DENGE (VID-001 → VID-017 toplam)
 
 | Tip | Sayı | Videolar |
 |-----|------|---------|
-| Trend Analizi | 3 | VID-001, VID-004, VID-006 |
-| Tutorial | 3 | VID-002, VID-007, VID-009 |
-| Kariyer/POV | 6 | VID-003, VID-008, VID-010, VID-011, VID-012, VID-013 |
+| Trend Analizi | 4 | VID-001, VID-004, VID-006, VID-017 |
+| Tutorial | 4 | VID-002, VID-007, VID-009, VID-016 |
+| Kariyer/POV | 8 | VID-003, VID-008, VID-010, VID-011, VID-012, VID-013, VID-014, VID-015 |
 | Girişim/Para | 1 | VID-005 |
 
-**Not:** Kariyer/POV ağırlığı (6/13) — belgesel seri nedeniyle yüksek. Aylık yayın (Video 3-6) nedeniyle aradaki haftalarda Trend/Tutorial dengeleyici video planlanmalı.
+**Not:** Kariyer/POV ağırlığı (8/17) — iki seri nedeniyle yüksek. Aradaki haftalarda (Temmuz-Ekim 2026) Trend/Tutorial dengeleyici video planlanmalı. VID-013→VID-014 arası aynı tip geçişi için 2026-10-27 bridge video önerilir.
 
 ---
 
@@ -52,6 +56,7 @@ Arşiv      → Yayından kaldırıldı
 | Seri | Videolar | Başlangıç | Bitiş | Durum |
 |------|---------|-----------|-------|-------|
 | Sıfırdan Veri Bilimcisi | VID-008 → VID-013 | 2026-06-23 | 2026-10-20 | Planlandı |
+| Veri Dünyasında Roller — 2026 Rehberi | VID-014 → VID-017 | 2026-11-03 | 2026-11-24 | Planlandı |
 
 ---
 

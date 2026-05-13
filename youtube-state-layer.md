@@ -38,7 +38,11 @@ Thumbnail arka plan: #414ecf
 ```
 "Bir sonraki videoda AI agent sistemlerini veri biliminde
 nasıl kullanırsın, onu anlatacağım."
-→ Bir sonraki video bu olmalı.
+→ VID-002 (2026-05-14) bu sözü karşılıyor. ✓
+
+Yeni seri vaadi (VID-014'te verilecek):
+"Bu 4 videoluk serinin ilk bölümü — her Salı devam ediyor."
+→ VID-015, VID-016, VID-017 ile karşılanacak.
 ```
 
 ---
@@ -60,20 +64,24 @@ nasıl kullanırsın, onu anlatacağım."
 | 011 | Kariyer / POV | Veri Bilimi 2. Ay — İlk Projem, İlk Hayal Kırıklığı | 📝 Script Taslak | 2026-08-25 | Sıfırdan Veri Bilimcisi 4/6 |
 | 012 | Kariyer / POV | 3 Ay Veri Bilimi — Şimdi Ne Biliyorum, Devam mı? | 📝 Script Taslak | 2026-09-22 | Sıfırdan Veri Bilimcisi 5/6 |
 | 013 | Kariyer / POV | 4 Ay Veri Bilimi — Ne Değişti, Ne Öğrendim? (Seri Sonu) | 📝 Script Taslak | 2026-10-20 | Sıfırdan Veri Bilimcisi 6/6 |
+| 014 | Kariyer / POV | Veri Dünyasında 3 Ana Yol — Hangisi Sana Uygun? (2026) | 📋 SEO + Script Hazır | 2026-11-03 | Veri Dünyasında Roller 1/4 |
+| 015 | Kariyer / POV | Data Analyst Ailesi — 8 Rol, Hangisi Sana Uyar? (2026) | 📋 SEO + Script Hazır | 2026-11-10 | Veri Dünyasında Roller 2/4 |
+| 016 | Tutorial | Data Engineer Ailesi — Dashboard Nasıl Oluşur? (2026) | 📋 SEO + Script Hazır | 2026-11-17 | Veri Dünyasında Roller 3/4 |
+| 017 | Trend Analizi | Veri Bilimci mi, AI Engineer mı? — 2026'da Ne Değişti | 📋 SEO + Script Hazır | 2026-11-24 | Veri Dünyasında Roller 4/4 |
 
 ---
 
 ## İÇERİK DENGE TAKİBİ
 
-### Tip Dağılımı (VID-001 → VID-013 toplam)
+### Tip Dağılımı (VID-001 → VID-017 toplam)
 ```
-Trend Analizi:        3/13 (VID-001, VID-004, VID-006)
-Tutorial / Araç:      3/13 (VID-002, VID-007, VID-009)
-Kariyer / POV:        6/13 (VID-003, VID-008, VID-010, VID-011, VID-012, VID-013)
-Girisim / Para:       1/13 (VID-005)
-Vlog:                 0/13
+Trend Analizi:        4/17 (VID-001, VID-004, VID-006, VID-017)
+Tutorial / Araç:      4/17 (VID-002, VID-007, VID-009, VID-016)
+Kariyer / POV:        8/17 (VID-003, VID-008, VID-010, VID-011, VID-012, VID-013, VID-014, VID-015)
+Girisim / Para:       1/17 (VID-005)
+Vlog:                 0/17
 ```
-Not: Kariyer/POV ağırlığı belgesel seriden geliyor. Aradaki haftalar Trend/Tutorial ile doldurulmalı.
+Not: Kariyer/POV ağırlığı iki seri (Sıfırdan Veri Bilimcisi + Veri Dünyasında Roller) nedeniyle yüksek. Temmuz-Ekim 2026 boşluklarına Trend/Tutorial planlanmalı. VID-013→VID-014 arası bridge video önerilir (2026-10-27).
 
 ### Topic Dağılımı (Rolling — Son 5 Video)
 ```
@@ -109,8 +117,12 @@ Video 010: #d2c7ff (lila) — seri V3 (aylık, VID-009 ile gap var)
 Video 011: #d2c7ff (lila) — seri V4 (aylık, arada regular video var)
 Video 012: #d2c7ff (lila) — seri V5 (aylık, arada regular video var)
 Video 013: #d2c7ff (lila) — seri V6 (aylık, arada regular video var)
+Video 014: #f4b5de (pembe) — seri "Veri Dünyasında Roller" V1 (VID-013 lila'dan farklı ✓)
+Video 015: #d2c7ff (lila) — seri V2 (VID-014 pembe'den farklı ✓)
+Video 016: #f0eee9 (krem) — seri V3 Tutorial (VID-015 lila'dan farklı ✓)
+Video 017: #414ecf (mavi) — seri V4 Trend (VID-016 krem'den farklı ✓)
 ```
-Not: VID-010 ile VID-013 arası aylık yayın — aradaki haftalık regular videolar farklı renk kullanmalı.
+Not: VID-010 ile VID-013 arası aylık yayın — aradaki haftalık regular videolar farklı renk kullanmalı. VID-014 için pembe seçildi çünkü VID-013 lila kullandı.
 
 **Renk Tekrarı Kuralı:** Aynı renk arka arkaya 2 kez kullanılmaz.
 
@@ -151,6 +163,8 @@ Top kaynak kanallar:
 8. **API:** ✅ Tüm API'ler kurulu. Gerçek CTR/Retention 2026-05-15 sonrası anlamlı hale gelir.
 9. **SERİ EKLENDI:** VID-008-013 "Sıfırdan Veri Bilimcisi" planlandı. VID-008 script hazır, VID-010-013 taslak (çekim öncesi güncellenmeli).
 10. **Aradaki haftalık boşluklar (2026-07-07, 07-14, 07-21 vb.):** Regular Trend/Tutorial içerik planlanmalı — belgesel episodlar aylık, kanal haftalık çalışmalı.
+11. **SERİ EKLENDI:** VID-014-017 "Veri Dünyasında Roller — 2026 Rehberi" planlandı. Tüm SEO paketleri + scriptler hazır. Başlangıç 2026-11-03.
+12. **BRIDGE VİDEO ÖNERİSİ:** VID-013 (Kariyer/POV, 2026-10-20) → VID-014 (Kariyer/POV, 2026-11-03) arası aynı tip. 2026-10-27 tarihine Trend Analizi bridge video planlaması önerilir. Bridge eklenirse yeni seri VID-015-018 olur.
 
 ---
 
@@ -161,6 +175,7 @@ Top kaynak kanallar:
 - AI Agent — Veri Bilimi sözünü erteleme — izleyici bekliyor
 - VID-002 hook'unu değiştirme — Vadi Hook olarak kararlaştırıldı (2026-05-10)
 - VID-010-013 scriptlerini güncellemeden çekim — gerçek ay verisi ZORUNLU
+- 2026-10-27 boşluğunu bridge video olmadan geçme — VID-013→VID-014 arası tip ihlali
 ---
 
 ## VİRAL MEKANİZMA NOTLARI
