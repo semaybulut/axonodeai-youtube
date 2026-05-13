@@ -21,7 +21,8 @@ Bu skill /youtube komutunun final adımında çağrılır.
 | İzleyici sesi — Arşiv | `knowledge/audience-voice.md` Bölüm B | APPEND | Her /youtube'da AUDIENCE_VOICE varsa |
 | Analytics snapshot (son) | `knowledge/analytics-snapshot.md` | OVERWRITE | Her /youtube çalışmasında |
 | Analytics snapshot (arşiv) | `knowledge/outputs/snapshot/YYYY-MM-DD-snapshot.md` | CREATE | Sadece --update flag ile |
-| Video profili | `knowledge/my-videos/VID-XXX.md` | CREATE / UPDATE | SEO paketi hazırsa oluştur; analitik geldiyse güncelle |
+| Video profili (yayında) | `knowledge/my-videos/VID-XXX.md` | CREATE / UPDATE | YouTube URL'si olan videolar; analitik geldiyse güncelle |
+| Video profili (pipeline) | `knowledge/pipeline/VID-XXX.md` | CREATE / UPDATE | SEO hazır, planlandı, çekimde — YouTube URL'si henüz yok |
 | Viral video analizi | `knowledge/viral-patterns/VPT-XXX.md` | CREATE | Yeni VPT analiz edilince |
 | Pattern kütüphanesi | `knowledge/viral-mechanism-library.md` | APPEND / UPDATE | Yeni pattern bulununca |
 | Başarısızlık kaydı | `knowledge/viral-mechanism-library.md` → BAŞARISIZ DENEYLER bölümü | APPEND | Her /youtube Hafıza Damıtma adımında |
@@ -40,9 +41,10 @@ Bu skill /youtube komutunun final adımında çağrılır.
 
 ```
 knowledge/
-├── my-videos/VID-XXX.md              <- Her video için profil
+├── my-videos/VID-XXX.md              <- Sadece YAYINDA olan videolar (YouTube URL'si var)
+├── pipeline/VID-XXX.md               <- SEO hazır / planlandı / çekimde (YouTube URL'si yok)
 ├── viral-patterns/VPT-XXX.md         <- Her viral video için analiz
-├── audience-voice.md                 <- İzleyici sesi (YENİ)
+├── audience-voice.md                 <- İzleyici sesi
 ├── viral-mechanism-library.md        <- Temizlenmiş pattern kütüphanesi
 ├── content-calendar.md               <- Yayın takvimi
 ├── analytics-snapshot.md             <- Son analytics özeti (Üzerine yazılır)
@@ -52,11 +54,22 @@ knowledge/
     └── kanal-haftalik-ortalamalar.md <- Kanal büyüme takibi (Kalıcı/Satır eklenir)
 ```
 
+### İki klasör arasındaki kural
+
+`knowledge/pipeline/VID-XXX.md` → `knowledge/my-videos/VID-XXX.md` geçişi:
+/youtube-publish VID-XXX çalıştırılınca:
+1. pipeline/VID-XXX.md içine YouTube URL ve video_id ekle
+2. Dosyayı my-videos/ klasörüne taşı
+3. pipeline/ altındaki dosyayı sil
+
 ---
 
 ## DOSYA 1 — VID-XXX.md (Her Video İçin)
 
-Konum: knowledge/my-videos/VID-XXX.md
+Konum:
+- `knowledge/pipeline/VID-XXX.md` → YouTube URL'si olmayan (SEO hazır, planlandı, çekimde)
+- `knowledge/my-videos/VID-XXX.md` → YouTube URL'si olan, yayındaki videolar
+
 Ne zaman: Yeni video eklenince veya analytics güncellenince
 
 ### Şablon

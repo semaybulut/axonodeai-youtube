@@ -103,6 +103,7 @@ Türkçe:
 - UCsGwZ3006CuJWcA5J3UPVWw - CodeWithBOD
 - UCsT0YIqwnpJCM-mx7-gSA4Q - TEDx Talks
 - UCatnasFAiXUvWwH8NlSdd3A - Evrim Ağacı
+- UCFWzA7s8FCfZYAdpUIhw2rw - Hande Aksu
 
 İngilizce:
 - UCeVMnSShP_Iviwkknt83cww - CodeWithHarry

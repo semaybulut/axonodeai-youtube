@@ -253,10 +253,11 @@ Tahmini süre: [X saniye]
 `skills/write-knowledge.md` kurallarını uygula.
 
 Sonraki VID key'i belirle:
-→ `knowledge/my-videos/` klasörüne bak
-→ Son VID key + 1
+→ `knowledge/my-videos/` VE `knowledge/pipeline/` klasörlerine bak
+→ Her iki klasördeki en yüksek VID numarası + 1
 
-Dosya oluştur: `knowledge/my-videos/VID-XXX.md`
+Dosya oluştur: `knowledge/pipeline/VID-XXX.md`
+(YouTube URL'si henüz olmadığı için pipeline'a yazılır — my-videos'a değil)
 
 ```markdown
 # VID-XXX — [Başlık]
@@ -295,7 +296,74 @@ Abone artışı: — (yayın sonrası doldurulacak)
 
 ### Raporu kaydet
 
-`knowledge/outputs/[TARIH]-konu-[konu-slug].md` oluştur.
+`knowledge/outputs/rapor/YYYY-MM-DD-konu-[konu-slug].md` oluştur.
+
+**RAPOR İÇERİĞİ — TAM ÇIKTI:**
+Rapor dosyası terminal çıktısının tamamını içermeli — özet değil.
+Aşağıdaki her bölümü eksiksiz dahil et:
+
+```markdown
+# Konu Raporu — [Konu Başlığı]
+**Tarih:** YYYY-MM-DD
+**Komut:** /youtube-konu
+**VID Key:** VID-XXX
+**Konu Girişi:** [kullanıcının girdiği konu]
+**İzleyici Bağlamı:** [varsa kullanıcının sağladığı izleyici notları]
+
+---
+
+## STRATEJİ KARARLARI
+[Video tipi seçimi, verilen söz kontrolü, blocked moves durumu,
+ thumbnail renk kararı ve gerekçesi]
+
+---
+
+## ADIM 2 — WEB ARAŞTIRMASI BULGULARI
+[Araştırma sorguları ve çıkarılan ham veriler]
+
+---
+
+## ADIM 3 — VİRAL VİDEO ANALİZİ
+[Her viral videonun tam analizi — başlık, izlenme, hook tipi, formül, thumbnail]
+
+---
+
+## ADIM 4 — STRATEJİ KONTROLÜ DETAYI
+[Her kontrolün sonucu — kural ihlali var mı, onay alındı mı]
+
+---
+
+## ADIM 5 — ÜRETİLEN SEO PAKETİ (TAM)
+### Başlık
+[Tüm başlık seçenekleri, formül ve gerekçe]
+
+### Açıklama
+[Tam açıklama metni — bölümler, kaynaklar dahil]
+
+### Taglar
+[Sabit 10 + değişken 5, toplam 15]
+
+### Thumbnail
+[Renk, metin, yüz ifadesi, başlıkla mesaj analizi]
+
+### Araştırma Notları
+[Tüm çarpıcı veriler + kaynaklar + viral video tablosu]
+
+### Hook Taslağı
+[Tam hook metni + süre tahmini]
+
+---
+
+## ADIM 6 — KONTROL LİSTESİ SONUCU
+[Her maddenin x/boş durumu]
+
+---
+
+## DOSYALAR
+- knowledge/pipeline/VID-XXX.md — oluşturuldu
+- youtube-state-layer.md — Yayın Takvimi güncellendi
+- Sheets sync: [başarılı / hata]
+```
 
 ### Sheets güncelle
 

@@ -17,7 +17,7 @@ Statik kural değil — değişen durum takibi.
 ### Kanal Bilgileri
 ```
 Kanal adı: Sema - Axonode AI
-Abone sayısı: 22
+Abone sayısı: 24
 Toplam video: 1
 Yayın günü: Salı
 Yayın saati: 09:00
@@ -53,6 +53,7 @@ nasıl kullanırsın, onu anlatacağım."
 | 004 | Trend Analizi | %57 Şirket AI Ajanı Kullanıyor — Sen Neredesin? | 📋 SEO Hazır | 2026-05-28 |
 | 005 | Girişim / Para | AI ile Freelance: 2026'da Gerçekten Çalışan 3 Yol | 💡 Fikir | 2026-06-04 |
 | 006 | Trend Analizi | Yapay Zeka Seni İşsiz mi Bırakacak? — Dürüst Cevap | 💡 Fikir | 2026-06-11 |
+| 007 | Tutorial | DevOps Olmadan Veri Bilimcisi Olunur mu? — 2026 Gerçeği | 📋 SEO Hazır | 2026-06-18 |
 
 ---
 
@@ -60,11 +61,11 @@ nasıl kullanırsın, onu anlatacağım."
 
 ### Tip Dağılımı (Rolling — Son 5 Video / Plan dahil)
 ```
-Trend Analizi:        3/6 (VID-001, VID-004, VID-006)
-Tutorial / Araç:      1/6 (VID-002)
-Kariyer / POV:        1/6 (VID-003)
-Girisim / Para:       1/6 (VID-005)
-Vlog:                 0/6
+Trend Analizi:        3/7 (VID-001, VID-004, VID-006)
+Tutorial / Araç:      2/7 (VID-002, VID-007)
+Kariyer / POV:        1/7 (VID-003)
+Girisim / Para:       1/7 (VID-005)
+Vlog:                 0/7
 ```
 
 ### Topic Dağılımı (Rolling — Son 5 Video)
@@ -109,12 +110,12 @@ Kural: Her videoda İngilizce altyazı zorunlu. /youtube-publish çalıştırıl
 ### Video 001 Performansı
 ```
 Yayın tarihi: 2026-05-08
-İzlenme: 199 (2026-05-10 itibarıyla)
-Beğeni: 18 (%9 oran — çok güçlü)
-Yorum: 13 (%6.5 oran — çok güçlü)
-Retention: 20.3% — ALARM (hedef %40-50)
+İzlenme: 297 (2026-05-13 itibarıyla)
+Beğeni: 21 (%7.1 oran — güçlü)
+Yorum: 14 (%4.7 oran — güçlü)
+Retention: 23.4% — ALARM (hedef %40-50)
 CTR: Birikme devam ediyor (2026-05-15 sonrası)
-Abone artışı: +5 (toplam 22)
+Abone artışı: +7 (toplam 24)
 Content suggesting this video: %27.6
 Top kaynak kanallar:
   - Claude Code YouTube kanalı
@@ -125,7 +126,7 @@ Top kaynak kanallar:
 
 ## STRATEJİK ÖNERİLER (Şu An)
 
-1. **VID-001 Retention Alarmı:** %20.3 — düşük. Olası neden: ilk 30 saniyede Vadi Hook yok. VID-002'de düzelt.
+1. **VID-001 Retention Alarmı:** %23.4 (güncel) — hâlâ düşük. Olası neden: ilk 30 saniyede Vadi Hook yok. VID-002'de düzelt.
 2. **VID-002 Hook:** Vadi tipi zorunlu — "Bu videonun sonunda AI agent kurmuş olacaksın." İlk 20 saniyede söyle.
 3. **VID-002 Thumbnail:** #f0eee9 + #f94144 metin — "AI AGENT KUR"
 4. **Altyazı:** VID-001 İngilizce altyazı eklendi mi kontrol et
