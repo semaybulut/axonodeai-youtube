@@ -62,6 +62,7 @@ axonodeai-youtube/
 ├── skills/
 │   ├── fetch-analytics.md               ← YouTube Analytics API
 │   ├── fetch-viral-videos.md            ← Viral video analizi
+│   ├── fetch-comments.md                ← İzleyici yorum analizi (YENİ)
 │   ├── write-sheets.md                  ← Google Sheets'e yaz
 │   └── write-knowledge.md               ← knowledge/ klasörüne yaz
 │
@@ -82,6 +83,7 @@ axonodeai-youtube/
 │   ├── viral-mechanism-library.md       ← Kanıtlanmış pattern kütüphanesi
 │   ├── content-calendar.md              ← Yayın takvimi (Sheets ile senkron)
 │   ├── analytics-snapshot.md            ← Son analitik özeti (üzerine yazılır)
+│   ├── audience-voice.md                ← İzleyici sesi arşivi (YENİ)
 │   └── outputs/
 │       ├── rapor/
 │       │   └── YYYY-MM-DD-youtube-rapor.md   ← Her komut çıktısı, silinmez
@@ -320,7 +322,7 @@ Her /youtube çalışmasından sonra şunlar güncellenir:
 - knowledge/content-calendar.md
 - youtube-state-layer.md → "Son Yayınlanan Video" ve "Verilen Söz"
 - Google Sheets: İçerik Takvimi + YouTube Analytics + Viral Patterns
-
+- knowledge/audience-voice.md (her /youtube'da AUDIENCE_VOICE varsa)
 ---
 
 **END CLAUDE.md**

@@ -129,6 +129,7 @@ Tüm ajanlar işini bitirdiğinde:
 2.  **Skill (write-knowledge)**: 
     *   Final raporunu şu konuma kaydet: `knowledge/outputs/rapor/YYYY-MM-DD-youtube-rapor.md`.
     *   `knowledge/analytics-snapshot.md` dosyasını üzerine yazarak güncelle.
+    *   knowledge/audience-voice.md → AUDIENCE_VOICE varsa güncelle (Bölüm A + B)
 3.  **Skill (write-sheets)**: Oneriler ve Icerik Takvimi sekmelerini güncelle.
 
 ---
@@ -202,6 +203,8 @@ GÜNCELLENEN DOSYALAR
 ✓ Google Sheets: İçerik Takvimi
 ✓ Google Sheets: YouTube Analytics
 ✓ Google Sheets: Viral Patterns
+✓ knowledge/audience-voice.md
+✓ Google Sheets: İzleyici Sesi
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ---

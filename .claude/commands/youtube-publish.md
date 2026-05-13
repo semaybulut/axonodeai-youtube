@@ -31,6 +31,13 @@ Gerçek verileri çek, sisteme kaydet, öğrenen mekanizmayı güncelle.
 3.  Sheets "Icerik Takvimi" sekmesini "✅ Yayında" olarak güncelle.
 
 ---
+## ADIM 0 — YORUM ANALİZİ (--update'e özgü)
+skills/fetch-comments.md'yi çalıştır — son video için.
+AUDIENCE_VOICE verisini write-knowledge'a gönder:
+→ knowledge/audience-voice.md güncelle (Bölüm A + B)
+→ Google Sheets Izleyici Sesi tabını güncelle
+
+---
 
 ## ADIM 1 — VİDEO BİLGİSİ AL
 

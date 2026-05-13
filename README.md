@@ -219,9 +219,9 @@ Günceller:
 |-------|-------|----------|-------------|
 | fetch-analytics | `skills/fetch-analytics.md` | YouTube Analytics + Data API ile kendi kanal verisini çeker | content-indexer |
 | fetch-viral-videos | `skills/fetch-viral-videos.md` | YouTube Search API ile viral video bulur, başlık/thumbnail/hook analiz eder | content-indexer |
-| write-sheets | `skills/write-sheets.md` | Google Sheets'i günceller (3 tab) | /youtube final adım |
+| write-sheets | `skills/write-sheets.md` | Google Sheets'i günceller (5 tab) | /youtube final adım |
 | write-knowledge | `skills/write-knowledge.md` | knowledge/ klasörüne yazar | /youtube final adım |
-
+| fetch-comments | `skills/fetch-comments.md` | Son 2 videonun yorumlarını çeker, 4 kategoriye ayırır | content-indexer |
 ---
 
 ## Dosya Haritası
@@ -261,11 +261,12 @@ axonodeai-youtube/
 │
 ├── knowledge/
 │   ├── my-videos/VID-XXX.md         ← Her video profili + script + performans
-│   ├── viral-patterns/VPT-XXX.md   ← Viral video analizleri
+│   ├── viral-patterns/VPT-XXX.md    ← Viral video analizleri
 │   ├── seriler/[seri-slug].md       ← Seri özet dosyaları
 │   ├── viral-mechanism-library.md   ← Kanıtlanmış pattern kütüphanesi
 │   ├── content-calendar.md          ← Yayın takvimi
 │   ├── analytics-snapshot.md        ← Son analitik özeti
+│   ├── audience-voice.md            ← İzleyici sesi arşivi
 │   └── outputs/                     ← /youtube rapor arşivi
 │
 └── scripts/
@@ -303,6 +304,7 @@ axonodeai-youtube/
 | `content-calendar.md` | Yayın takvimi. Sheets ile senkron. | idea-generator, /youtube-konu, /youtube-seri |
 | `analytics-snapshot.md` | Kanal özeti, video performansları, alarmlar, ortalamalar. Her çalışmada üzerine yazılır. | content-indexer, /youtube-publish |
 | `outputs/` | /youtube rapor arşivi. YYYY-MM-DD-youtube-rapor.md. Silinmez. | seo-optimizer |
+| `audience-voice.md` | İzleyici sesi arşivi: sorular, istek konular, eleştiriler, övgüler | write-knowledge, content-indexer |
 
 ## Knowledge klasör haritası
 
@@ -315,13 +317,14 @@ knowledge/
 │   └── [seri-slug].md          ← Seri özet dosyaları
 ├── viral-mechanism-library.md  ← Kanıtlanmış pattern kütüphanesi (şu an 5 pattern)
 ├── content-calendar.md         ← Yayın takvimi (Sheets ile senkron)
+├── audience-voice.md            ← İzleyici sesi arşivi
 ├── analytics-snapshot.md       ← Son analitik özeti (her çalışmada üzerine yazılır)
 └── outputs/
-├── rapor/
-│   └── YYYY-MM-DD-youtube-rapor.md      ← Her /youtube ve /youtube-seri çıktısı
-├── snapshot/
-│   └── YYYY-MM-DD-snapshot.md           ← Haftalık analytics arşivi (silinmez)
-└── kanal-haftalik-ortalamalar.md        ← Kanal büyüme takibi (silinmez)
+│    ├── rapor/
+│    │   └── YYYY-MM-DD-youtube-rapor.md      ← Her /youtube ve /youtube-seri çıktısı
+│    ├── snapshot/
+│    │   └── YYYY-MM-DD-snapshot.md           ← Haftalık analytics arşivi (silinmez)
+│    └── kanal-haftalik-ortalamalar.md        ← Kanal büyüme takibi (silinmez)
 
 ---
 
@@ -416,6 +419,9 @@ python scripts/sync_sheets.py
 # 7 gün sonra
 /youtube-publish VID-XXX --update
 python scripts/sync_sheets.py
+
+# Video yayınlandıktan 7 gün sonra (yorumlar birikince)
+/youtube-publish VID-XXX --update   ← yorum analizi de çalışır
 ```
 ---
 

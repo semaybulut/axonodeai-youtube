@@ -1,33 +1,60 @@
 # SKILL: write-knowledge
 # AxonodeAI YouTube Brain
-# knowledge/ klasörüne yaz — yerel vault güncelleme
+# Yerel Bilgi Tabanı Yazımı — knowledge/ Klasörü Yönetimi
 
 ---
 
 ## GÖREV
 
-/youtube komutunun ürettiği tüm veriyi
-knowledge/ klasörüne doğru formatta yaz.
+Üretilen analizleri, stratejik güncellemeleri ve izleyici seslerini
+knowledge/ klasörüne hiyerarşik ve silinmez şekilde yaz.
 Bu skill /youtube komutunun final adımında çağrılır.
+
+---
+
+## DOSYA DAVRANIŞ TABLOSU
+
+| Dosya/Klasör | Yol | Mod | Ne Zaman |
+|---|---|---|---|
+| Rapor arşivi | `knowledge/outputs/rapor/YYYY-MM-DD-youtube-rapor.md` | CREATE | Her /youtube ve /youtube-seri sonunda |
+| İzleyici sesi — Global | `knowledge/audience-voice.md` Bölüm A | UPDATE | Her /youtube'da AUDIENCE_VOICE varsa |
+| İzleyici sesi — Arşiv | `knowledge/audience-voice.md` Bölüm B | APPEND | Her /youtube'da AUDIENCE_VOICE varsa |
+| Analytics snapshot (son) | `knowledge/analytics-snapshot.md` | OVERWRITE | Her /youtube çalışmasında |
+| Analytics snapshot (arşiv) | `knowledge/outputs/snapshot/YYYY-MM-DD-snapshot.md` | CREATE | Sadece --update flag ile |
+| Video profili | `knowledge/my-videos/VID-XXX.md` | CREATE / UPDATE | SEO paketi hazırsa oluştur; analitik geldiyse güncelle |
+| Viral video analizi | `knowledge/viral-patterns/VPT-XXX.md` | CREATE | Yeni VPT analiz edilince |
+| Pattern kütüphanesi | `knowledge/viral-mechanism-library.md` | APPEND / UPDATE | Yeni pattern bulununca |
+| İçerik takvimi | `knowledge/content-calendar.md` | UPDATE | idea-generator yeni fikir üretince |
+| Haftalık ortalamalar | `knowledge/outputs/kanal-haftalik-ortalamalar.md` | APPEND | Her /youtube-publish --update'te |
+
+**Mod açıklamaları:**
+- CREATE → Yeni dosya oluştur, varsa üzerine yazma
+- UPDATE → Sadece değişen bölümü güncelle, geri kalanına dokunma
+- OVERWRITE → Tüm dosyayı yeniden yaz (sadece analytics-snapshot.md)
+- APPEND → Dosyanın sonuna yeni blok ekle, eskiye dokunma
 
 ---
 
 ## YAZILACAK DOSYALAR
 
+```
 knowledge/
-├── my-videos/VID-XXX.md           ← Her video için profil
-├── viral-patterns/VPT-XXX.md      ← Her viral video için analiz
-├── viral-mechanism-library.md     ← Temizlenmiş pattern kütüphanesi
-├── content-calendar.md            ← Yayın takvimi
-├── analytics-snapshot.md          ← Son analytics özeti (Geçici/Üzerine yazılır)
+├── my-videos/VID-XXX.md              <- Her video için profil
+├── viral-patterns/VPT-XXX.md         <- Her viral video için analiz
+├── audience-voice.md                 <- İzleyici sesi (YENİ)
+├── viral-mechanism-library.md        <- Temizlenmiş pattern kütüphanesi
+├── content-calendar.md               <- Yayın takvimi
+├── analytics-snapshot.md             <- Son analytics özeti (Üzerine yazılır)
 └── outputs/
-    ├── rapor/                     ← Her /youtube ve /youtube-seri çıktısı (Kalıcı)
-    ├── snapshot/                  ← Haftalık analytics arşivi (Kalıcı)
-    └── kanal-haftalik-ortalamalar.md ← Kanal büyüme takibi (Kalıcı/Satır eklenir)
+    ├── rapor/                        <- Her /youtube çıktısı (Kalıcı)
+    ├── snapshot/                     <- Haftalık analytics arşivi (Kalıcı)
+    └── kanal-haftalik-ortalamalar.md <- Kanal büyüme takibi (Kalıcı/Satır eklenir)
+```
 
 ---
 
 ## DOSYA 1 — VID-XXX.md (Her Video İçin)
+
 Konum: knowledge/my-videos/VID-XXX.md
 Ne zaman: Yeni video eklenince veya analytics güncellenince
 
@@ -71,22 +98,15 @@ Ne zaman: Yeni video eklenince veya analytics güncellenince
 
 ## PERFORMANS NOTLARI
 
-**En güçlü yön:**
-[Hangi metrik iyi, neden]
+**Güçlü yönler:**
+- [Ne iyi çalıştı]
 
-**Geliştirilecek:**
-[Hangi metrik düşük, ne yapılabilir]
+**Alarm:**
+- [Sorun varsa]
 
-**Pattern notları:**
-[Bu videodan öğrenilen — bir sonraki videoya uygulanacak]
-
----
-
-## İÇERİK YAPISI
-
-**Hook tipi:** [İddia / Soru / Şok / Hikaye / Vadi]
-**Bölüm sayısı:** X
-**CTA tipi:** [Yorum / Abone / Sonraki video]
+**Pattern bağlantısı:**
+- Başlık formülü: [X] → CTR [X]%
+- Hook tipi: [X] → Retention [X]%
 
 ---
 
@@ -94,15 +114,15 @@ Ne zaman: Yeni video eklenince veya analytics güncellenince
 
 **Bir önceki video:** [[VID-XXX]]
 **Bir sonraki video:** [[VID-XXX]]
-**Bağlantılı IG post:** [IG post tarihi veya kodu]
 **Kullanılan viral pattern:** [[VPT-XXX]]
 ```
 
 ---
 
 ## DOSYA 2 — VPT-XXX.md (Her Viral Video İçin)
+
 Konum: knowledge/viral-patterns/VPT-XXX.md
-Ne zaman: fetch-viral-videos yeni video analiz edince
+Ne zaman: fetch-viral-videos yeni viral video analiz edince
 
 ### Şablon
 ```markdown
@@ -116,130 +136,126 @@ Ne zaman: fetch-viral-videos yeni video analiz edince
 ---
 
 ## BAŞLIK ANALİZİ
-
-**Başlık:** [Tam başlık]
-**Karakter sayısı:** X/60
-**Formül:** [Formül 1/2/3/4/5]
-**Güçlü kelimeler:** [liste]
-**Yıl var mı:** Evet/Hayır
-**Sayı var mı:** Evet/Hayır
-**Güçlü iddia var mı:** Evet/Hayır
+Formül: [Formül 1/2/3/4/5]
+Karakter: [XX/60]
+Güçlü kelimeler: [kelime1, kelime2]
 
 ---
 
 ## THUMBNAIL ANALİZİ
-
-**Yüz var mı:** Evet/Hayır
-**Metin:** [Thumbnail'daki kelimeler]
-**Kelime sayısı:** X
-**Arka plan rengi:** [hex veya tanım]
-**Metin rengi:** [hex veya tanım]
-**Kontrast:** Yüksek/Orta/Düşük
-**İfade tipi:** [Merak/Şaşkınlık/Ciddiyet/Heyecan]
-**Kompozisyon:** [Sol yüz sağ metin / diğer]
+Yüz var mı: Evet / Hayır
+Metin kelime sayısı: X
+Renk şema: [renkler]
+Kontrast: Yüksek / Orta / Düşük
+İfade tipi: Merak / Şaşkınlık / Ciddiyet
 
 ---
 
-## HOOK ANALİZİ
-
-**Hook tipi:** [İddia/Soru/Şok/Hikaye/Vadi]
-**Açılış cümlesi:** [İlk cümle]
-**Vadi var mı:** Evet/Hayır
-**Hook süresi:** X saniye
-**Transcript mevcut:** Evet/Hayır
+## HOOK ANALİZİ (İlk 30 sn)
+Hook tipi: [İddia / Soru / Şok / Hikaye / Vadi]
+Vadi var mı: Evet / Hayır
+Aciliyet var mı: Evet / Hayır
 
 ---
 
-## YAPI ANALİZİ
-
-**Toplam süre:** X dakika
-**Bölüm sayısı:** X
-**Giriş süresi:** X dakika
-**Chapter var mı:** Evet/Hayır
-**CTA tipi:** [liste]
-
----
-
-## AXONODEAI İÇİN
-
-**Kullanılabilir mi:** Evet/Hayır/Kısmen
-**En güçlü özellik:** [1 cümle]
-**Nasıl uygularım:** [Spesifik öneri]
-**Hangi video tipine uygun:** [Trend/Tutorial/Kariyer/Girişim]
-**Öncelik:** Yüksek/Orta/Düşük
-
----
-
-## BAĞLANTILAR
-
-**Bu pattern kullanan videolarım:** [[VID-XXX]]
-**Benzer pattern:** [[VPT-XXX]]
+## KULLANILABILIRLIK
+AxonodeAI için uygulanabilir mi: Evet / Hayır / Kısmen
+Nasıl uygulanır: [Öneri]
 ```
 
 ---
 
-## DOSYA 3 — viral-mechanism-library.md
+## DOSYA 3 — audience-voice.md (İZLEYİCİ SESİ)
+
+Konum: knowledge/audience-voice.md
+Ne zaman: Her /youtube'da AUDIENCE_VOICE verisi gelince
+Mod: İKİ KATMANLI — Bölüm A UPDATE, Bölüm B APPEND
+
+### Bölüm A Güncelleme Kuralı (Master Table)
+Master Table'da eşleşen konu (aynı tema/talep) VAR:
+→ Frekansı +1 artır
+→ Son Tarihi bugünle güncelle
+→ Kaynak Video sütununa yeni VID key'i ekle (virgülle)
+→ Yeni satır açma
+
+Master Table'da eşleşen konu YOK:
+→ Yeni satır ekle
+→ Durum: "⏳ Bekliyor"
+
+Video planlandıysa:
+→ Durum: "📋 Planlandı ([VID-XXX])"
+
+Video yayınlandıysa:
+→ Durum: "✅ Yanıtlandı"
+
+### Bölüm B Ekleme Kuralı (Arşiv)
+Dosyanın "# BÖLÜM B — PERİYODİK ARŞİV" satırından hemen sonra yeni blok ekle:
+
+```markdown
+## [YYYY-MM-DD] — [VID-XXX], [VID-XXX]
+
+### Anlık Özet
+Toplam yorum çekilen:  X
+Toplam filtrelenen:    X
+Kategorize edilen:     X
+En fazla kategori:     [Kategori]
+Acil öncelik:          [Konu] — X frekans
+Genel duygu:           [Duygu]
+
+### SORULAR
+| VID | Yorum (özet) | Beğeni | Tema |
+|-----|--------------|--------|------|
+| [VID-XXX] | [yorum] | X | [tema] |
+
+### İSTEK KONULAR
+| VID | Yorum (özet) | Beğeni | İstenen Konu |
+|-----|--------------|--------|--------------|
+| [VID-XXX] | [yorum] | X | [konu] |
+
+### ELEŞTİRİLER
+| VID | Yorum (özet) | Beğeni | Konu |
+|-----|--------------|--------|------|
+| [VID-XXX] | [yorum] | X | [konu] |
+
+### ÖVGÜLER
+| VID | Yorum (özet) | Beğeni | Ne Beğendi |
+|-----|--------------|--------|------------|
+| [VID-XXX] | [yorum] | X | [ne beğendi] |
+```
+
+---
+
+## DOSYA 4 — viral-mechanism-library.md
+
 Konum: knowledge/viral-mechanism-library.md
-Ne zaman: pattern-finder yeni pattern onaylayınca
-Mantık: Ekleme yap, silme — sadece manuel
+Ne zaman: Yeni pattern bulununca
 
-### Güncelleme Formatı
-
-Dosyanın sonuna yeni pattern ekle:
-
+### Yeni Pattern Formatı
 ```markdown
 ## PATTERN — [PATTERN ADI]
 **ID:** VPT-XXX
-**Kategori:** Hook / Başlık / Thumbnail / Yapı / CTA
-**Kaynak video:** [VPT-XXX başlık]
+**Kategori:** [Hook / Başlık / Thumbnail / Yapı]
+**Kaynak video:** VPT-XXX
 **İzlenme:** X
 **Doğrulama:** [Kaç videoda test edildi]
 
-**Gözlem:**
-[Ne yapıyor — spesifik ve somut]
+Kanıtlanmış: EVET / HAYIR
+Kanıt kaynağı: [[VID-XXX]] (%X retention), [[VID-XXX]] (%X retention)
+Son güncelleme: YYYY-MM-DD
 
-**Neden çalışıyor:**
-[Psikolojik veya algoritma gerekçesi]
-
-**AxonodeAI uygulaması:**
-[Benim için nasıl kullanırım — somut örnek]
-
-**Kullanıldığı videolarım:**
-- [[VID-XXX]] — nasıl uyguladım
-
+**Gözlem:** [Ne yapıyor]
+**Neden çalışıyor:** [Analiz]
+**AxonodeAI uygulaması:** [Spesifik öneri]
+**Kullanıldığı videolarım:** [[VID-XXX]], [[VID-XXX]]
 **Ekleme tarihi:** YYYY-MM-DD
-**Son güncelleme:** YYYY-MM-DD
-
----
 ```
 
-### Dosya Başlığı (İlk Kurulumda Yaz)
-```markdown
-# VİRAL MEKANİZMA KÜTÜPHANESİ
-**Owner:** Sema | AxonodeAI
-**Son Güncelleme:** YYYY-MM-DD
-**Toplam Pattern:** X
-
-Bu dosya /youtube komutu çalıştıkça büyür.
-Her pattern birden fazla videoda doğrulandıktan sonra
-"Kanıtlanmış" olarak işaretlenir.
+2+ videoda doğrulandıysa → başlığa "— KANITLANMIŞ" etiketi ekle.
 
 ---
 
-## KANITMLANMIŞ PATTERNLER
-[Birden fazla videoda test edilmiş]
+## DOSYA 5 — content-calendar.md
 
----
-
-## TEST EDİLİYOR
-[Henüz tek video verisi var]
-
----
-```
-
----
-
-## DOSYA 4 — content-calendar.md
 Konum: knowledge/content-calendar.md
 Ne zaman: idea-generator yeni fikir üretince
 Mantık: Tablo güncellenir — Sheets ile senkron
@@ -249,40 +265,12 @@ Mantık: Tablo güncellenir — Sheets ile senkron
 # İÇERİK TAKVİMİ
 **Son Güncelleme:** YYYY-MM-DD
 
----
-
 ## YAYIN TAKVİMİ
 
 | VID Key | Tip | Başlık | Yayın Tarihi | Durum |
 |---------|-----|--------|--------------|-------|
 | VID-001 | Trend Analizi | Python Öğrenmek Yetmiyor | 2026-05-08 | ✅ Yayında |
 | VID-002 | Tutorial | AI Agent Sistemleri | 2026-05-14 | 📋 Planlandı |
-| VID-003 | — | — | 2026-05-21 | 💡 Fikir |
-| VID-004 | — | — | 2026-05-28 | 💡 Fikir |
-
----
-
-## DURUM AÇIKLAMALARI
-
-💡 Fikir      → idea-generator önerdi
-📋 Planlandı  → Konu onaylandı, üretim başlamadı
-🎬 Çekimde    → Aktif üretimde
-✂️ Post       → Kurgu aşamasında
-✅ Yayında    → Canlı
-🗄️ Arşiv     → Yayından kaldırıldı
-
----
-
-## İÇERİK DENGE (Son 5 Video)
-
-| Tip | Sayı | Hedef |
-|-----|------|-------|
-| Trend Analizi | X | min 1/5 |
-| Tutorial | X | min 1/5 |
-| Kariyer/POV | X | min 1/5 |
-| Girişim/Para | X | min 1/5 |
-
----
 
 ## VERİLEN SÖZ TAKİBİ
 
@@ -291,116 +279,111 @@ Mantık: Tablo güncellenir — Sheets ile senkron
 | AI Agent anlatacağım | VID-001 | VID-002 | ⏳ Bekliyor |
 ```
 
+AUDIENCE_VOICE kaynaklı fikirleri eklerken durum notu belirt:
+```markdown
+| VID-005 | Tutorial | [Konu] | YYYY-MM-DD | 💡 Fikir (İzleyici Talebi) |
+```
+
 ---
 
-## DOSYA 5 — analytics-snapshot.md
-Konum: knowledge/analytics-snapshot.md
-Ne zaman: Her /youtube çalışmasında güncellenir
-Mantık: Üzerine yaz — sadece son snapshot tutulur
+## DOSYA 6 — analytics-snapshot.md
 
-### Şablon
+Konum: knowledge/analytics-snapshot.md
+Ne zaman: Her /youtube çalışmasında
+Mantık: Tüm dosyayı yeniden yaz (sadece son snapshot tutulur)
+
+### Raporda Fallback Bilgisi
+E�er herhangi bir şerit fallback kullandıysa snapshot'ın başına not ekle:
 ```markdown
 # ANALİTİK SNAPSHOT
 **Son Güncelleme:** YYYY-MM-DD HH:MM
+**Veri Kaynağı:** API (normal) / ⚠️ Snapshot (API hatası nedeniyle)
+```
 
 ---
-## DOSYA 6 — RAPORLAR (ARŞİV)
+
+## DOSYA 7 — RAPORLAR (ARŞİV)
+
 Konum: knowledge/outputs/rapor/YYYY-MM-DD-youtube-rapor.md
-Ne zaman: Her /youtube veya /youtube-seri vb komutları sonunda.
-Mantık: Yeni dosya oluşturulur, eskiler silinmez.
+Ne zaman: Her /youtube veya /youtube-seri sonunda
+Mantık: CREATE — yeni dosya, eskiler silinmez
+
+Rapor başlığına ekle:
+```markdown
+**Tarih:** YYYY-MM-DD HH:MM
+**Veri Kaynakları:**
+- Şerit A: API / ⚠️ Snapshot
+- Şerit B: API / ⚠️ Arşiv (viral-patterns/)
+- Şerit C: API / ⚠️ Snapshot (audience-voice.md)
+```
 
 ---
 
-## DOSYA 7 — SNAPSHOT ARŞİVİ
+## DOSYA 8 — SNAPSHOT ARŞİVİ
+
 Konum: knowledge/outputs/snapshot/YYYY-MM-DD-snapshot.md
-Ne zaman: /youtube-publish VID-XXX --update sonrasında.
-Mantık: analytics-snapshot.md içeriğinin o günkü kopyasıdır.
+Ne zaman: /youtube-publish VID-XXX --update sonrasında
+Mantık: analytics-snapshot.md'nin o günkü tam kopyası
 
 ---
-## DOSYA 8 — KANAL HAFTALIK ORTALAMALAR
+
+## DOSYA 9 — KANAL HAFTALIK ORTALAMALAR
+
 Konum: knowledge/outputs/kanal-haftalik-ortalamalar.md
-Ne zaman: Her /youtube-publish --update çalışınca.
-Mantık: En alta YENİ SATIR ekle. Eski satırları asla değiştirme.
+Ne zaman: Her /youtube-publish --update çalışınca
+Mantık: En alta YENİ SATIR ekle, eski satırlara asla dokunma
 
+```
 Tarih,Video Sayısı,Ort. CTR,Ort. Retention,Ort. İzlenme,Ort. Beğeni,Ort. Yorum
-[YYYY-MM-DD],[X],[%X],[%X],[Sayı],[%X],[%X]
-
----
-
-## KANAL ÖZETI
-
-| Metrik | Değer | Önceki | Değişim |
-|--------|-------|--------|---------|
-| Toplam Abone | X | X | +X |
-| Toplam İzlenme | X | X | +X |
-| Son 28 Gün İzlenme | X | X | +X |
-
----
-
-## VIDEO PERFORMANSLARI
-
-| VID Key | Başlık | İzlenme | CTR | Retention | Durum |
-|---------|--------|---------|-----|-----------|-------|
-| VID-001 | Python... | X | X% | X% | ✅/⚠️/❌ |
-
----
-
-## ALARMLAR
-
-⚠️ Dikkat Gerektiren:
-- [VID-XXX]: CTR %X — hedefin altında, thumbnail güncelle
-- [VID-XXX]: Retention %X — hook sorunu olabilir
-
-✅ İyi Performans:
-- [VID-XXX]: CTR %X — ortalamanın üstünde
-
----
-
-## TRAFIK ANALİZİ
-
-**Öneri sistemi toplamı:** X%
-**Arama toplamı:** X%
-**Dış trafik toplamı:** X%
-
-**En çok öneri getiren video:** VID-XXX
-**En çok arama getiren video:** VID-XXX
-
----
-
-## SONRAKİ /youtube İÇİN NOTLAR
-
-[Bu snapshot'tan çıkan ve bir sonraki analizde
-kontrol edilmesi gereken noktalar]
+YYYY-MM-DD,X,%X,%X,Sayı,%X,%X
 ```
 
 ---
 
 ## YAZMA KURALLARI
-Mevcut dosyayı önce oku
-Sadece değişen kısmı güncelle
-Klasör Kontrolü: Yazma işleminden önce outputs/rapor/ ve outputs/snapshot/ klasörlerinin varlığını kontrol et, yoksa oluştur.
-Bağlantıları [[VID-XXX]] formatında yaz
-Tarihleri her zaman YYYY-MM-DD formatında yaz
-Boş alan bırakma — veri yoksa "Henüz veri yok" yaz
-Silme yapma — güncelle veya ekle
+
+- Mevcut dosyayı önce oku, sadece değişen kısmı güncelle
+- Bağlantıları `[[VID-XXX]]` veya `[[VPT-XXX]]` formatında yaz
+- Tarihleri her zaman `YYYY-MM-DD` formatında yaz
+- Snapshot ve rapor dosyalarına `HH:MM` saatini ekle
+- Boş alan bırakma — veri yoksa `—` veya `Henüz veri yok` yaz
+- Silme yapma — güncelle veya ekle
+- Klasör kontrolü: Yazma öncesi `outputs/rapor/` ve `outputs/snapshot/` varlığını kontrol et, yoksa oluştur
 
 ---
 
 ## HATA YÖNETİMİ
 
 **Dosya bulunamıyor:**
-→ Klasör Erişimi Yok: "knowledge/outputs/ alt klasörlerine erişilemiyor" uyarısı ver ve dur.
-→ Kullanıcıya sor onay al yeni oluştur, şablonu kullan
+→ Şablonu kullanarak yeni dosya oluştur
 → "VID-XXX.md oluşturuldu" yaz
-→ Snapshot Eksik: Eğer arşivleme sırasında kaynak analytics-snapshot.md bulunamazsa, kullanıcıya bildir.
+→ Devam et
+
+**Klasör erişimi yok:**
+→ "knowledge/outputs/ alt klasörlerine erişilemiyor" yaz
+→ Kullanıcıdan onay al, oluştur
+
+**Snapshot eksik (arşivleme sırasında):**
+→ Kullanıcıyı bildir
+→ Mevcut analytics-snapshot.md içeriğiyle devam et
 
 **Yazma izni yok:**
 → "knowledge/ klasörüne yazma izni yok" yaz
 → Dur
 
 **Veri eksik:**
-→ "Henüz veri yok" yaz
+→ `—` yaz
 → Devam et
+
+---
+
+## SINIRLAR
+
+- Başlık satırlarını değiştirme
+- Primary key (VID-XXX, VPT-XXX) formatını değiştirme
+- Arşiv dosyalarını silme veya üzerine yazma (outputs/rapor/, outputs/snapshot/, kanal-haftalik-ortalamalar.md)
+- audience-voice.md'de eski Bölüm B bloklarına dokunma
+- Yorum sahibi adlarını dosyalara yazma — gizlilik
 
 ---
 
