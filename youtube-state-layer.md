@@ -52,7 +52,7 @@ Yeni seri vaadi (VID-014'te verilecek):
 | Video No | Tip | Konu | Durum | Tarih | Seri |
 |----------|-----|------|-------|-------|------|
 | 001 | Trend Analizi | Python Öğrenmek Yetmiyor | ✅ Yayında | 2026-05-08 | — |
-| 002 | Tutorial | AI Agent Kur: Veri Biliminde Adım Adım — 2026 | 📋 SEO Hazır | 2026-05-14 | — |
+| 002 | Tutorial | AI Agent Kur: Veri Biliminde Adım Adım — 2026 | 📝 Script Hazır | 2026-05-14 | — |
 | 003 | Kariyer / POV | Sağlıktan Veri Bilimine Geçtim — Kimse Söylemedi | 📋 SEO Hazır | 2026-05-21 | — |
 | 004 | Trend Analizi | %57 Şirket AI Ajanı Kullanıyor — Sen Neredesin? | 📋 SEO Hazır | 2026-05-28 | — |
 | 005 | Girişim / Para | AI ile Freelance: 2026'da Gerçekten Çalışan 3 Yol | 💡 Fikir | 2026-06-04 | — |

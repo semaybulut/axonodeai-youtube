@@ -8,7 +8,7 @@
 | VID Key | Tip | Başlık | Yayın Tarihi | Durum | Seri |
 |---------|-----|--------|--------------|-------|------|
 | VID-001 | Trend Analizi | Python Öğrenmek Yetmiyor — 2026'da Veri Bilimi Gerçekten Ne İstiyor? | 2026-05-08 | Yayında | — |
-| VID-002 | Tutorial | AI Agent Kur: Veri Biliminde Adım Adım — 2026 | 2026-05-14 | SEO Hazır | — |
+| VID-002 | Tutorial | AI Agent Kur: Veri Biliminde Adım Adım — 2026 | 2026-05-14 | Script Hazır | — |
 | VID-003 | Kariyer / POV | Sağlıktan Veri Bilimine Geçtim — Kimse Söylemedi | 2026-05-21 | SEO Hazır | — |
 | VID-004 | Trend Analizi | %57 Şirket AI Ajanı Kullanıyor — Sen Neredesin? | 2026-05-28 | SEO Hazır | — |
 | VID-005 | Girişim / Para | AI ile Freelance: 2026'da Gerçekten Çalışan 3 Yol | 2026-06-04 | Fikir | — |
