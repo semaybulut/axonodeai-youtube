@@ -31,19 +31,21 @@ Okumadan ajan çalıştırma.
 agents/content-indexer.md dosyasını oku ve çalıştır.
 
 Görev:
-- YouTube Analytics API ile kendi kanalının verilerini çek
-- Özellikle son yayınlanan videoların detaylı analitiğini al
-- Belirlenen viral videoları analiz et
-- Ham veriyi bir sonraki ajana aktar
+- Şerit A: YouTube Analytics API ile kendi kanalının verilerini çek
+- Şerit B: Belirlenen nişlerde viral videoları analiz et
+- Şerit C: Son 2 videonun yorumlarını çek, audience voice verisini derle
+- Üç şeridi CONTENT_INDEX'te birleştir, bir sonraki ajana aktar
 
 Çıktı:
 CONTENT_INDEX = {
 own_videos: [...],
-viral_videos: [...]
+viral_videos: [...],
+audience_voice: {...}
 }
 
 Başarılı olunca: "✓ content-indexer tamamlandı" yaz ve devam et.
-Başarısız olunca: dur, hata mesajını yaz, devam etme.
+Başarısız olunca (Analytics API): Kullanıcıyı bildir. Onay al. Önceki analytics-snapshot.md kullan, devam et. 
+Başarısız olunca (Şerit C): audience-voice.md son bloğunu kullan, devam et. Durma.
 
 ---
 
@@ -67,7 +69,7 @@ opportunities: [...]
 }
 
 Başarılı olunca: "✓ pattern-finder tamamlandı" yaz ve devam et.
-Başarısız olunca: dur, hata mesajını yaz, devam etme.
+Başarısız olunca (Viral API): Kullanıcıyı bildir. Onay al. Mevcut VPT dosyalarıyla devam et.
 
 ---
 
@@ -167,6 +169,7 @@ skills/write-sheets.md'yi çalıştır:
 - İçerik Takvimi sheet'i → yeni video fikirleri ekle
 - YouTube Analytics sheet'i → son video verilerini güncelle
 - Viral Patterns sheet'i → yeni pattern'ler ekle
+- İzleyici Sesi → AUDIENCE_VOICE varsa
 
 ### 2. Knowledge Klasörünü Güncelle
 skills/write-knowledge.md'yi çalıştır:

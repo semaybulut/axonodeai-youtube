@@ -200,6 +200,7 @@ youtube-strategy.md'deki renk listesi bilgi amaçlıdır, bu tablo önceliklidir
 3. youtube-strategy.md
 4. youtube-viral-mekanizma.md ← ZORUNLU — hook formülleri burada
 5. knowledge/viral-mechanism-library.md
+6. audience-voice.md
 
 ---
 ## AJAN ÇALIŞMA SIRASI
