@@ -21,7 +21,7 @@ Okumadan ajan çalıştırma.
 ## AKIŞ
 1.  **Ajan 1 (content-indexer)**: Veri topla (API veya Snapshot).
 2.  **Ajan 2 (pattern-finder)**: Pattern ve Gap analizi yap.
-3.  **Ajan 3 (idea-generator)**: 3 yeni video fikri üret.
+3.  **Ajan 3 (idea-generator)**: 4 yeni video fikri üret.
 4.  **Ajan 4 (seo-optimizer)**: SEO paketlerini hazırla.
 
 ---
@@ -80,21 +80,49 @@ Görev:
 - youtube-state-layer.md'deki "Verilen Söz" bölümünü kontrol et
 - Verilen söz varsa ilk fikir MUTLAKA o olsun
 - youtube-strategy.md içerik denge kurallarını uygula
-- PATTERNS'taki fırsatlarla örtüşen 3 video fikri üret
+- PATTERNS'taki fırsatlarla örtüşen 4 video fikri üret
+- Her fikir şu 4 kaynaktan birinden gelir (hiyerarşi sabittir):
+    Fikir 1 → Stratejik Öncelik (Verilen Söz / Takvim)
+    Fikir 2 → Viral Gap (Trend / Büyüme)
+    Fikir 3 → Kariyer / POV (Bağ Kurma)
+    Fikir 4 → İzleyici Özel (Audience Voice) — zorunlu
 - Her fikir için tip, tahmini performans gerekçesi yaz
 
 Çıktı:
 IDEAS = [
 {
 sira: 1,
+kaynak: "STRATEGY / PROMISE",
 tip: "Tutorial",
 konu: "...",
 neden: "...",
 tahmini_performans: "..."
 },
-...
+{
+sira: 2,
+kaynak: "VIRAL_GAP",
+tip: "...",
+konu: "...",
+neden: "...",
+tahmini_performans: "..."
+},
+{
+sira: 3,
+kaynak: "CAREER_POV",
+tip: "...",
+konu: "...",
+neden: "...",
+tahmini_performans: "..."
+},
+{
+sira: 4,
+kaynak: "AUDIENCE_VOICE",
+tip: "...",
+konu: "...",
+neden: "...",
+tahmini_performans: "..."
+}
 ]
-
 Başarılı olunca: "✓ idea-generator tamamlandı" yaz ve devam et.
 Başarısız olunca: dur, hata mesajını yaz, devam etme.
 
@@ -154,6 +182,28 @@ youtube-state-layer.md'yi güncelle:
 - Blocked moves güncelle
 - Last Updated tarihi güncelle
 
+### 4. Hafıza Damıtma — ZORUNLU
+Bu adım sistemin geçmiş hatalarından ders çıkarmasını sağlar.
+Raporu oluştururken şu soruyu sor:
+"Bu haftaki çalışmada işe YARAMAYAN ne vardı?"
+
+Kaynaklar:
+- pattern-finder çıktısı → gaps ve alarmlar
+- seo-optimizer çıktısı → reddedilen başlık formülleri
+- CONTENT_INDEX.own_performance → düşük retention / CTR alarm veren videolar
+
+**A) youtube-state-layer.md → BLOCKED MOVES bölümüne ekle:**
+Sadece somut başarısızlık varsa ekle — belirsiz gözlemler ekleme.
+Format:
+[YYYY-MM-DD] [Ne denendi] — [VID-XXX] — [Sonuç] → [Bir sonraki adım]
+Örnek: - [2026-05-14] Vadi Hook Tutorial — VID-002 — Retention %22 → Şok/Veri hook dene
+
+**B) knowledge/viral-mechanism-library.md → BAŞARISIZ DENEYLER bölümüne ekle:**
+Bu bölüm yoksa dosyanın sonuna oluştur.
+Format:
+| [Tarih] | [VID Key] | [Denenen yapı] | [CTR/Retention] | [Karar] |
+
+Kural: Bu adımı atlamak yasak. Veri yoksa "Bu hafta başarısızlık kaydı yok — [tarih]" yaz.
 ---
 
 ## TERMİNAL RAPORU
@@ -176,17 +226,19 @@ Retention:         [X]%
 Yorum:             [X]
 Abone artışı:      [X]
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-ÖNERİLEN SONRAKI 3 VİDEO
+ÖNERİLEN SONRAKI 4 VİDEO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-[TİP] — [BAŞLIK]
+[1] [TİP] — [BAŞLIK]   (Kaynak: STRATEGY/PROMISE)
 Neden: [1 cümle]
 Başlık: [SEO başlık]
 Thumbnail: [renk + metin]
 Taglar: [liste]
-[TİP] — [BAŞLIK]
+[2] [TİP] — [BAŞLIK]   (Kaynak: VIRAL_GAP)
 ...
-[TİP] — [BAŞLIK]
+[3] [TİP] — [BAŞLIK]   (Kaynak: CAREER_POV)
+...
+[4] [TİP] — [BAŞLIK]   (Kaynak: AUDIENCE_VOICE)
 ...
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

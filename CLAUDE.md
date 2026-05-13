@@ -145,7 +145,7 @@ Bu kurallar youtube-strategy.md ve youtube-state-layer.md'den gelir.
 Ajan kararlarında bunlara uy:
 
 - Aynı tip video arka arkaya gelmez
-- Her 3 videodan 1 tanesi kariyer/kişisel/girişim olmalı
+- Her 4 videodan 1 tanesi kariyer/kişisel/girişim olmalı
 - Tutorial ve Trend Analizi dönüşümlü gelir
 - Verilen söz bozulmaz — state layer'daki "Verilen Söz" her zaman önce gelir
 - Thumbnail rengi arka arkaya tekrar etmez
@@ -239,7 +239,7 @@ Beş komut mevcut. Her biri `.claude/commands/` altında tanımlı.
 
 ### /youtube
 Ana haftalık komut. 4 ajan sırayla çalışır.
-Analitik toplar, viral pattern bulur, 3 video önerir, SEO paketi hazırlar.
+Analitik toplar, viral pattern bulur, 4 video önerir, SEO paketi hazırlar.
 Her Salı video yayınlamadan önce çalıştır.
 
 ### /youtube-konu "konu başlığı"

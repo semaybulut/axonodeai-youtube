@@ -24,6 +24,7 @@ Bu skill /youtube komutunun final adımında çağrılır.
 | Video profili | `knowledge/my-videos/VID-XXX.md` | CREATE / UPDATE | SEO paketi hazırsa oluştur; analitik geldiyse güncelle |
 | Viral video analizi | `knowledge/viral-patterns/VPT-XXX.md` | CREATE | Yeni VPT analiz edilince |
 | Pattern kütüphanesi | `knowledge/viral-mechanism-library.md` | APPEND / UPDATE | Yeni pattern bulununca |
+| Başarısızlık kaydı | `knowledge/viral-mechanism-library.md` → BAŞARISIZ DENEYLER bölümü | APPEND | Her /youtube Hafıza Damıtma adımında |
 | İçerik takvimi | `knowledge/content-calendar.md` | UPDATE | idea-generator yeni fikir üretince |
 | Haftalık ortalamalar | `knowledge/outputs/kanal-haftalik-ortalamalar.md` | APPEND | Her /youtube-publish --update'te |
 

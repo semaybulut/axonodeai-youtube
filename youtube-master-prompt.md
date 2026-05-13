@@ -94,7 +94,11 @@ Her Salı video yayınlamadan önce çalıştır.
   AJAN 3: idea-generator
   → Verilen sözü kontrol et — bu ilk adım, atlanamaz
   → İçerik denge ve renk kurallarını uygula
-  → 3 video fikri üret, her fikre viral mekanizma ekle
+  → 4 video fikri üret, her fikre viral mekanizma ekle
+    Fikir 1: Stratejik Öncelik (Verilen Söz / Takvim)
+    Fikir 2: Viral Gap (Trend / Büyüme)
+    Fikir 3: Kariyer / POV (Bağ Kurma)
+    Fikir 4: İzleyici Özel (Audience Voice) — zorunlu
 
   → HATA YÖNETİMİ:
     Başarısız olursa → Dur. Hata detayını yaz. Devam etme.
@@ -149,7 +153,7 @@ Video yayınlandığında çalıştır. Sistemin öğrenme mekanizması budur:
 
 /youtube-publish VID-XXX --update → 7 gün sonra çalıştır, tam analitik için.
 
-3+ video birikince ajan şunu yapabilir:
+4+ video birikince ajan şunu yapabilir:
 "Soru formülü başlık bu konu tipinde ort. %4.1 CTR getirdi, İddia formülü %2.8.
 Bu video için Soru formülü öneriyorum."
 
@@ -414,9 +418,9 @@ Yeni video eklenince bir sonraki sıra numarasını al. Formatı değiştirme.
 
 Sıralama kuralları:
 - Aynı tip arka arkaya gelmez
-- Her 3 videodan 1 tanesi Kariyer/POV veya Girişim/Para olmalı
+- Her 4 videodan 1 tanesi Kariyer/POV veya Girişim/Para olmalı
 - Tutorial ve Trend Analizi dönüşümlü gelir
-- Healthcare bağlantılı içerik max 1/5 olmalı — baskın olmasın
+- Healthcare bağlantılı içerik max 1/7 olmalı — baskın olmasın
 - Her 5 videodan 1 tanesi pattern break: beklenmedik başlık, farklı format, kontrarian görüş (→ bkz: youtube-strategy.md)
 
 ---

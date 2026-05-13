@@ -197,6 +197,18 @@ Yeterince spesifik olmayan vadi çalışmıyor. "Çok şey öğreneceksin" yerin
 **Kullanıldığı videolarım:**
 - [[VID-002]] (planlandı — 2026-05-14, bu pattern uygulanacak)
 
+---
+
+## BAŞARISIZ DENEYLER
+
+Bu tablo her /youtube çalışmasının Hafıza Damıtma adımında güncellenir.
+Amacı: Kanıtlanmış pattern listesinin karşı tarafı — neyin işe YARAMADIĞINI takip et.
+
+| Tarih | VID Key | Denenen Yapı | Metrik | Karar |
+|-------|---------|--------------|--------|-------|
+| — | — | Henüz kayıt yok | — | — |
+
+
 **Ekleme tarihi:** 2026-05-10
 **Son güncelleme:** 2026-05-10
 

@@ -20,6 +20,7 @@ sistemine göre tam kullanıma hazır paket üret. Kaydet.
 - `youtube-state-layer.md` — mevcut durum, blocked moves, renk takibi
 - `youtube-strategy.md` — içerik tipi kuralları
 - `youtube-seo-system.md` — SEO kuralları
+- `youtube-viral-mekanizma.md` — hook formülleri ve retention mekanizmaları ← ZORUNLU
 - `knowledge/viral-mechanism-library.md` — kanıtlanmış pattern'ler
 
 ---

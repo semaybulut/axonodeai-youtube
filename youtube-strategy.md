@@ -66,7 +66,7 @@ Sağlıktan veri bilimine geçiş bu yolculuğun bir parçası — ama kanal bun
 **Güçlü yön:** SEO, araştırma credibility, save-worthy
 
 ### Tip 2: TUTORIAL / ARAÇ REHBERİ
-**Format:** Adım adım AI aracı veya veri bilimi araçalrı teknik konu anlatımı
+**Format:** Adım adım AI aracı veya veri bilimi araçları teknik konu anlatımı
 **Süre:** 8-12 dakika
 **Sıklık:** 2 haftada bir
 **Konu örnekleri:** AI agent kurulumu, üretken AI araçları, veri bilimi araçları
@@ -127,7 +127,7 @@ Cuma  — Kısa format / Shorts
 - AI Araçları / Tutorial: min 1
 - İşin Geleceği / Trend: min 1
 - Girişim / Para Kazanma: min 1
-- Healthcare bağlantılı: max 2 (baskın olmasın)
+- Healthcare bağlantılı: max 1/7  (baskın olmasın)
 
 ## PATTERN BREAK TANIMI
 

@@ -74,13 +74,13 @@ AI Araclari:          0/5
 Veri bilimi:          0/5
 Isin Gelecegi:        1/5
 Girisim / Para:       0/5
-Healthcare baglantili: 1/5
+Healthcare baglantili: 1/7
 ```
 
 ### Kural
 - Aynı tip arka arkaya gelmez
 - Her 3 videodan 1 kariyer/kişisel/girişim olmalı
-- Healthcare bağlantılı içerik max 1/5 olmalı — baskın olmasın
+- Healthcare bağlantılı içerik max 1/7 olmalı — baskın olmasın
 - Seri vaadi bozulmamalı
 
 ---
